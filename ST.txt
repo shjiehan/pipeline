@@ -1,0 +1,1710 @@
+github.com:
+shjiehan / jerys00n
+
+ubuntu ´úÀí·þÎñÆ÷£º 9.111.139.59:8080
+9.123.109.189  root/passw0rd
+9.111.36.56    root/ring2fmr
+
+9.0.2 Approved for Investigation:
+New: 12
+Open: 6
+Pending: 23
+Resolved: 48
+
+9.0.2 GA Approved:
+New: 26
+Open: 9
+Pending: 102
+Resolved: 203
+
+
+Hotfix: 12 for DB, 15 for Notes security
+Automation:
+  Automated:1394
+  Automation Candidate:1028
+  Automation in Progress:30
+  Manual:598
+  No Plans To Automate:8
+  Partially Automated:70
+  No Categorized:136
+SPR: 50+63+7+4=124
+
+carbon / datssip713
+cdlweb / Datsip22
+
+±±ÆûÐÂÄÜÔ´²ýÆ½µê:4008722449
+
+****inlineindex****
+load updall <dbname> [-T <viewname>] -Inline on/off
+INLINE_VIEW_INDEX=1.nsf,2.nsf |  INLINE_VIEW_INDEX_ALL=1
+sho dbs * inline  |  sho dbs * inline views
+dbcache show inline | dbcache show inline views
+ tell inlineindex help
+ Command for inline index maintenance thread
+        Tell InlineIndex <action> [database [view]]
+ Where action is one of:
+        SHOW - Show only views with inline design.
+                Optional [view] argument can be "VIEWS" or "*"
+                to show all inline design views
+        DISABLE - Disable indexes open on server run
+        ENABLE  - Enable indexes open on server
+        REFRESH - Open all indexes for dbs with inline indexed
+                design.
+        HELP
+
+****inlineindex****
+
+ESXI Server:
+9.123.109.189 root/passw0rd
+SN: 794599T4983   LargeServerRoom: Rack: K5
+
+CRUDALLTest,CalendarAllTest,MailFreebusyAllTest
+
+linux sambaÖÐ²»ÏÔÊ¾ÎÄ¼þ£ºsetenforce 0
+
+net use q: \\9.70.223.27\nd "Jerys19n" /user:"iris\shjiehan"
+
+net use q: /delte
+
+7z a C:\domino901.zip C:\notes_bak
+7z x C:\domino901.zip -oC:\
+
+9.112.241.109   carbon.swg.usma.ibm.com  carbon carbon-vh.swg.usma.ibm.com  carbon-vh carbon-vs.swg.usma.ibm.com  carbon-vs
+9.110.92.15     datsip.swg.usma.ibm.com  datsip
+9.110.92.8      lead.swg.usma.ibm.com lead
+9.110.92.9      datsip2.swg.usma.ibm.com datsip2
+
+Automatical Domino Installation/BVT with the latest build
+
+As a Domino application tester, I want to install and run BVT as soon as the latest domino build is ready. So FVT team can know whether the new build has blocker issues or not as soon as possible.
+
+Acceptance Criteria:
+
+Begin to download the new build to local at once after it is ready.
+upgrade the domino server to the lastest build
+kick off BVT automation testcases to run
+sending out BVT results
+
+domino automation:
+du  domino.tar #ÏÔÊ¾ÎÄ¼þ´óÐ¡
+head -n 1 LATEST.linux64.prod | cut -d '\' -f 1
+mount -o username=shjiehan,domain=iris,password=Jerys19n -l //9.70.223.28/nd/dailykits/V901FP8 /mlsa2/nd
+tar -C /build -xvf linux64.tar
+@for /f "tokens=1 delims=," %%x in ("%TARGET_HOSTS%") do set FIRST_HOST=%%x
+ÔÚlinux shell scriptÀï¡£
+while Ñ­»·¡£Äñ¸çµÄÀý×Ó
+
+while [ "yn" != "yes" -a "yn" != "YES"]
+do
+read -p "input yes/YES" yn
+done
+
+-a ±íÊ¾ÒªÂú×ãÁ½¸öÌõ¼þÔò·µ»Øtrue
+*****************************************
+
+±±¾©ÊÐº£µíÇø¶¯ÎïÎÀÉú¼à¶½Ëù: 82785158
+1. Å©´ó¶¯ÎïÒ½Ôº´ò¿ñÈ®ÓýÃç£¬¸øÒ»Ö¤Ã÷
+2. 21ÌìºóÌå¼ì£ºÅ©´ó¶¯ÎïÒ½Ôº£¬¸øÒ»Ö¤Ã÷
+3. ÄÃ×ÅÉÏÃæ2Ö¤Ã÷£¬³ö·¢Ç°4Ììµ½±±¾©ÊÐº£µíÇø¶¯ÎïÎÀÉú¼à¶½Ëù¿ª¼ìÒßÖ¤Ã÷£¨½Ú¼ÙÈÕ²»°ì¹«£¬²»Òª´øÃ¨¡££©
+
+your system must be configured with I/O Completion Ports:
+
+9.110.92.7      winserver3.notes.sec  winserver3
+9.110.92.12     lnxserver1.notes.sec  lnxserver1
+9.125.72.49     zlinux1.notes.sec     zlinux1
+9.112.241.12   aixserver1.notes.sec  aixserver1
+9.123.96.227    ip227.cn.ibm.com      ip227
+
+¸»µç¿Æ¼¼ 18518092578 ÁÖ
+
+http://xpdcitrix65ii/citrix/xenapp
+
+net time \\9.111.36.90 /set
+
+Windows 2016 Ê±¼äÍ¬²½£º 
+w32tm /stripchart /computer:9.111.36.90 /samples:8 /dataonly
+net start w32time
+w32tm /config /manualpeerlist:9.111.36.90 /syncfromflags:manual /reliable:yes /update
+
+
+TCPIP_TcpIpAddress=0,192.168.1.3:1352
+
+zlinux: 9.42.101.229
+login as srvfvt8 / b8stonma
+sudo -i  ÇÐ»»µ½root user
+
+# smitty iocp
+In SMIT, in the Change / Show Characteristics of I/O Completion Ports section, verify that the value for State to be configured at system restart is set to ¡°available¡± . If it is not, change the status from Defined to available. Restart the server, and then check that the status is updated to available.
+
+
+RLEH7 firewall:
+systemctl status firewalld
+systemctl stop firewalld
+systemctl disable firewalld
+
+netstat -anltup | grep :25 -a
+locate  master | grep '/master$'
+rpm -qf   /user/libxec/postfix/master
+systemctl stop postfix
+systemctl disable postfix
+
+disable transaction logging on a db:
+load ncompact -t test.nsf  #-T enable transaction logging
+
+NIFNSFEnable=1
+CREATE_R9_DATABASES=1
+CREATE_NIFNSF_DATABASES=1
+NIFBasePath=NIF
+
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout adfs.pem -out adfs.pem -config openssl.cfg -extensions v3_ca
+openssl pkcs12 -export -out adfs.pfx -in adfs.pem -name "adfs"
+
+SAML debug:
+1. Notes native side logs
+Add below settings in current user's Notes.ini:
+DEBUG_CONSOLE=1
+DEBUG_CLOCK=32
+DEBUG_OUTFILE=c:\temp\debugout.txt
+DEBUGGINGWCTENABLED=4294967295
+CONSOLE_LOG_ENABLED=1
+DEBUG_DYNCONFIG=1
+DEBUG_TRUST_MGMT=1
+ 
+2. Notes Java side logs:
+Add below settings in this file of current user's Data folder, such as
+"C:\Program Files\IBM\Lotus\Notes\Data\workspace\.config\rcpinstall.properties":
+com.ibm.notes.internal.federated.manager.level=FINEST
+com.ibm.notes.java.api.internal.level=FINEST
+com.ibm.notes.java.init.level=FINEST
+com.ibm.notes.java.init.win32.level=FINEST
+com.ibm.rcp.roaming.service.internal.level=FINEST
+com.ibm.rcp.platform.personality.level=FINEST
+com.ibm.rcp.internal.security.auth.samlsso.level=FINEST
+com.ibm.rcp.accounts.internal.auth.module.level=FINEST
+com.ibm.rcp.platform.personality.level=FINEST
+com.ibm.workplace.internal.notes.security.level=FINEST
+com.ibm.rcp.roaming.service.internal.level=FINEST
+ 
+
+
+ADFS3.0 of Paul:
+https://adfs.test.sec/adfs/ls/IdpInitiatedSignon.aspx
+1.telnet groundhog.austin.ibm.com to pass BSO
+2.pickle.austin.ibm.com   - Administrator   L0tusl@b  
+
+Add-KdsRootKey ¨CEffectiveTime (Get-Date).AddHours(-10)
+New-ADServiceAccount FsGmsa -DNSHostName adfs.test.sec -ServicePrincipalNames http/adfs.test.sec
+
+New-SelfSignedCertificateEx  -Subject 'CN=adfs.test.sec' -ProviderName "Microsoft Enhanced RSA and AES Cryptographic Provider"  -KeyLength 2048 -FriendlyName 'ADFS3 SelfSigned' -SignatureAlgorithm sha256 -EKU "Server Authentication", "Client authentication" -KeyUsage "KeyEncipherment, DigitalSignature" -Exportable -StoreLocation "LocalMachine"
+New-SelfSignedCertificateEx
+
+Solr:
+"enableIndex":true is entitle, false is disentitle:
+curl -H "Content-Type: application/json" -H "Accept: application/json;odata=verbose" -H "X-DominoCustomerID: 20000082" -d '{"enableIndex":true}' -X PUT http://cdlg5sm01.scn5.cn.ibm.com/api/solradmin/users/20012932
+Verify index ready or not:
+/opt/ibm/lotus/bin/solrindexmgr -s data1/s/126/20000183.nsf
+Migrate:
+curl -H "Content-Type: application/json" -H "Accept: application/json;odata=verbose" -X PUT http://cdlg5sm01.scn5.cn.ibm.com/api/solradmin/users/migrate/20000082/20012933/1
+decommission:
+curl -H "Content-Type: application/json" -H "Accept: application/json;odata=verbose" -X PUT http://cdl4sm02.scn4.cn.ibm.com/api/solradmin/users/decommission/20000759/20033618/201
+verse?solr-v2-apis=1 
+
+cdl4:  c:\notes\ldapsearch -h 9.123.107.132 -b "O=DominoSaaS" "(ibm-ndInternetAddress=shjiehan@searchcomp.com)"
+cdlg5:  C:\notes\ldapsearch -h 9.123.103.196 -b "O=DominoSaaS" "(ibm-ndInternetAddress=shjiehan@searchcomp5.com)"
+tell mailsm primchk
+
+TBD: Y000719
+
+
+ /opt/ibm/lotus/notes/85010/linux/solrindexmgr data1/20000759/20033618.nsf
+
+
+Notes://Kungfu/8525740F00609A23/867962C7D68029F085256603006ADD59/8EBEA40D4EDB049885257F770016CB67 
+companyadmin: cdl4solr@chinapd.cn.ibm.com/passw0rd
+  company name: searchcomp
+  customer id: 20000759
+
+
+Yun Fei Wei: 
+sm:
+tell handler replgreenzone 
+res task dots 
+res task http 
+
+sm02:
+su - domino
+saasconsolelocal tell handler serres verlist /tmp/mail.lst 2
+console_all.sh /tmp/mail.lst console res task solrpopulator 
+C:\notes\ldapsearch -h 9.123.103.196 -b "O=DominoSaaS" "(ibm-ndSaaSPersonID=20012932)"  ibm-ndInternetAddress ibm-ndMailFile ibm-ndMailServer ibm-ndSaaSMailFile2 ibm-ndSaaSMailServer2 ibm-ndSaaSOfferingCapabilities ibm-ndSaaSSolrCloudID ibm-ndSaaSSolrCollectionID ibm-ndSaaSSolrCloudID2 ibm-ndSaaSSolrCollectionID2 ibm-ndSaaSSolrCloudID3 ibm-ndSaaSSolrCollectionID3 ibm-ndSaaSSolrCloudID4 ibm-ndSaaSSolrCollectionID4 
+C:\notes\ldapsearch -h 9.123.103.196 -b "O=DominoSaaS" "(ibm-ndInternetAddress=testf@searchcomp5.com)"
+ÓÃÕâ¸öcheckÏÂtdsÀïcloudÊÇ²»ÊÇÔÚ201 & 202 
+
+https://mail.notes.scn3.cn.ibm.com/api/search/documents?q=folderunid:*%20AND%20form:Notice%20&fl=subject,folderunid&indent=true
+
+1200+2589 Ì§Í·¿ª³µÅÆºÅ
+
+ShengJie--
+receiver:
+otolorin_5990528_raffaella@travelversebundle3.svtrel.org
+Raffaele_10010528_antonella@travelversebundle3.svtrel.org
+sender:
+Raffic_17080528_cenk@travelversebundle3.svtrel.org
+
+ËùÓÐÕËºÅÃÜÂë¶¼ÊÇpassw0rd£¨traveler ºÍscnµÄ¶¼ÊÇÒ»Ñù£©
+traveler ·þÎñÆ÷µØÖ·traveler3.notes.collabservsvt1.swg.usma.ibm.com
+SCNµÇÂ½µØÖ·https://apps.collabservsvt1.swg.usma.ibm.com/manage/account/dashboardHandler/input
+
+
+\\9.123.118.248\SametimeShare\SametimeBuild\ST9.0.1Gold
+
+rhel¹Ø±Õ·À»ðÇ½£º
+systemctl status firewalld
+systemctl stop firewalld
+systemctl disable firewalld
+netstat -anltup | grep :25 -a
+
+±±ÆûÐÂÄÜÔ´±±º½Î÷ÃÅµê£¬ÊÛºó£º
+82233689
+
+ibm storwize v7000
+
+smitty  iocp
+
+CREATE_R9_DATABASES=1
+tell clrepl quit - Cluster replicater
+
+christof luecking 
+
+4:34:13 PM: LUECKING@de.ibm.com 
+
+4:34:34 PM: rberube@us.ibm.com 
+
+scn-prod:
+ds2f$$ap 
+service jenkins restart
+service apache2 restart 
+/etc/rc.local 
+
+AIX?,??sendmail??:
+??SENDMAIL?
+1.stopsrc -s sendmail
+ps -ef |grep sendmail??.
+????SENDMAIL.
+2.vi /etc/rc.tcpip
+??/qpi=30m,?#????;
+???start /usr/lib/sendmail??#??;
+???????
+
+ÐÞ¸ÄÄ¬ÈÏ½âÎöË³Ðò¿ÉÒÔÍ¨¹ýÒÔÏÂÈýÖÖ·½·¨£º 
+
+1¡¢±à¼­/etc/netsvc.conf£¬Ìí¼ÓÈçÏÂÄÚÈÝ 
+
+   hosts=local,bind,nis    ¡ª¡ª±¾µØhosts¡¢dns¡¢nis
+2¡¢¸³»·¾³±äÁ¿£ºexport NSORDER=local,bind,nis 
+ÌØ±ðÒª×¢ÒâÒ»µã£¬ hosts µ¥´ÊÇ°Ãæ²»ÄÜÓÐ¿Õ¸ñ£¬·ñÔò²»ÉúÐ§¡£
+3¡¢Èç¹ûÖ÷»úÓòÃû½âÎöË³ÐòÎªdns/bind,nis,local£¬Ö»ÒªÉ¾³ý/etc/resolv.conf£¬Ö÷»ú¼´×ßlocal½âÎö£¨´Ë²½ÖèÓÐ·çÏÕ£©£¬¶ÔÓÚ /etc/resolv.conf ÎÄ¼þµÄÅäÖÃ£¬¿ÉÍ¨¹ýÃüÁîsmitty resolv.conf £¬ÒÔÏÂÊÇ/etc/resolv.confÊ¾Àý
+
+ubuntu join domain:
+domainjoin-cli join notes.sec administrator
+domainjoin-cli leave administrator
+
+To simulate i400help.nsf is locking by any other process:
+1. access to Domino Server via iSeries Navigator and open Integrated File System. 
+2. Move to your <Domino Data Directory>/help Directory in left frame, and then select i400help.nsf in right frame. 
+3. Open the properties of i400help.nsf and checkout it.
+
+
+IBM i:  hansj / passw0rd
+\\9.123.96.227\root\domino
+
+zizhufang apply:
+http://zzfws.bjjs.gov.cn/enroll/dyn/enroll/viewEnroll.htm
+shjiehan / jerys0n_1975
+
+
+machines for 901fp7 testing:
+database:
+   Windows 2012: 9.123.109.21
+   RHEL 7.2: 9.123.109.25
+   AIX 7: 9.110.188.57
+   Win7: 9.123.109.22
+Notes Security:
+   win7: 9.123.109.27
+   ubuntu: 9.123.155.122
+
+login ubuntu using domain users:
+# vi /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+greeter-show-manual-login=true
+
+vnc on ubuntu:
+1. sudo apt-get install x11vnc
+2. sudo x11vnc -forever -passwd passw0rd
+3. vi xstartup:
+xrdb $HOME/.Xresources
+startxfce4 &
+
+
+790015290  wly19751976
+
+1. Notes native side logs
+Add below settings in current user's Notes.ini:
+DEBUG_CONSOLE=1
+DEBUG_CLOCK=32
+DEBUG_OUTFILE=c:\temp\debugout.txt
+DEBUGGINGWCTENABLED=4294967295
+CONSOLE_LOG_ENABLED=1
+DEBUG_DYNCONFIG=1
+DEBUG_TRUST_MGMT=1
+ 
+2. Notes Java side logs:
+Add below settings in this file of current user's Data folder, such as
+"C:\Program Files\IBM\Lotus\Notes\Data\workspace\.config\rcpinstall.properties":
+com.ibm.notes.internal.federated.manager.level=FINEST
+com.ibm.notes.java.api.internal.level=FINEST
+com.ibm.notes.java.init.level=FINEST
+com.ibm.notes.java.init.win32.level=FINEST
+com.ibm.rcp.roaming.service.internal.level=FINEST
+com.ibm.rcp.platform.personality.level=FINEST
+com.ibm.rcp.internal.security.auth.samlsso.level=FINEST
+com.ibm.rcp.accounts.internal.auth.module.level=FINEST
+com.ibm.rcp.platform.personality.level=FINEST
+com.ibm.workplace.internal.notes.security.level=FINEST
+com.ibm.rcp.roaming.service.internal.level=FINEST
+ 
+3. Try your logging in again and send back logs to us:
+Native logs: c:\temp\debugout.txt
+Java logs:C:\Program Files\IBM\Lotus\Notes\Data\workspace\logs(the whole folder)
+ 
+
+
+c:\windows\system32\sysprep\sysprep.exe /oobe /generalize /reboot
+
+http://zzfws.bjjs.gov.cn/enroll/dyn/enroll/viewEnroll.htm
+shjiehan / jerys0n_1975
+
+9.111.36.90/91/92  9.110.92.199/201/202/203/204/205
+
+zizhufang:
+shjiehan / jerys0n_1975
+http://zzfws.bjjs.gov.cn/enroll/dyn/enroll/viewEnroll.htm
+
+ IPv4 Address. . . . . . . . . . . : 9.123.154.42(Preferred)
+ Subnet Mask . . . . . . . . . . . : 255.255.255.0
+ Default Gateway . . . . . . . . . : 9.123.154.1
+ DNS Servers . . . . . . . . . . . : 9.181.131.231
+
+/sbin/service qpidd stop & chkconfig --del qpidd
+
+We need to register to RHN in order to use those repo source, even you try to enable the repo, by editing the line “enable=0?to “enable=1?but it won’t work. The easy way is build a local repository from your current redhat’s DVD / ISO file:
+
+
+# mkdir /cdrom
+ # mount /dev/cdrom /cdrom
+
+Rename existing repo file “rhel-source.repo?to “rhel-source.repo.backup?or whatever you want.
+ Create another repo file name, example “dvd.repo?
+
+
+# vi dvd.repo
+ [dvd-source]
+ name=RHEL 6.4 dvd repo
+ baseurl=file:///cdrom/Server
+ enabled=1
+ gpgcheck=0
+
+Check your repo config, Test  and try to install the package:
+ # yum repolist
+
+
+MakeAndDeployPersonalBuildTestContentZip
+
+
+1. Have you made any plan for your retirement life?
+2. Where will you live after retirement?
+3. Will you be glad to take care of grandson or granddaughter after you retire?
+4. How much money is enough for your retirement life?
+5. If your husband/wife leaves you, are you going to find a new one?
+6. For the adults who died before retirement, what will you say to them?
+7. What have you done to make your parents or parents in law to enjoy their retirement life?
+
+
+
+
+ri2f^^ap
+
+IP, checkIPList, executeWinCmdWithResponse - DongNing
+
+ID files - ShengJie
+
+uninstallDominoServers, executeWinCmd - YanNan
+
+installDominoServers - ShengJie
+
+cleanup-Shiming
+
+remove NotesHelper - yanan
+
+
+
+
+configOnPremDomino - DongNing
+
+additionalConfigForDomino - YanNan
+
+createConfigureHybridCustomer
+
+copyIdFiles - ShengJie 
+
+
+
+End user can set his/her self-defining company name(s) for multiple IPs now
+   Parameter CompanyNames was set for self-defining company name(s) in HybridBuildOut.bat, please edit HybridBuildOut.bat and input your self-defining company name(s) as "@set CompanyNames=<Company Name 1>,<Company Name 2>". Their sequence should be the same as IPList that you input, it means that the first Company Name is defined for the first IP Address, the second Company Name is defined for the second IP Address and so on. End user can also define company names for a part of IPs, but the IPs that will have their self-defining company names should be put in front of the IPList, and code will auto assign company names for the IPs without slef-defining company names as "autohy"+ "time-stamp".
+
+
+
+Åï»§Çø¸ÄÔì¶¨Ïò°²ÖÃ·¿
+73
+	²É¿ÕÅï»§Çø¸ÄÔìÐ¡Ô°µØ¿é¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ý43.16ÍòÆ½·½Ã×
+74
+	²É¿ÕÅï»§Çø¸ÄÔìÐ¡Ô°3AºÅµØ¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼9.72ÍòÆ½·½Ã×
+75
+	²É¿ÕÅï»§Çø¸ÄÔì³Ç×Ó´åÎ¯»áÖÜ±ßµØ¿é°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼12.34ÍòÆ½·½Ã×
+76
+	²É¿ÕÅï»§Çø¸ÄÔìÐ¡Ô°4¡¢5ºÅµØ¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼22.69ÍòÆ½·½Ã×
+77
+	²É¿ÕÅï»§Çø¸ÄÔìÐ¡Ô°08ºÅµØ¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼8.77ÍòÆ½·½Ã×
+78
+	²É¿ÕÅï»§Çø¸ÄÔì²Ü¸÷×¯°²ÖÃ·¿±±²àµØ¿é¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼15.04 ÍòÆ½·½Ã×
+79
+	²É¿ÕÅï»§Çø¸ÄÔì²Ü¸÷×¯AµØ¿é¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼22.08ÍòÆ½·½Ã×
+80
+	²É¿ÕÅï»§Çø¸ÄÔì³Ç×ÓCµØ¿é¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼5.77ÍòÆ½·½Ã×
+81
+	²É¿ÕÅï»§Çø¸ÄÔì³Ç×ÓDµØ¿é¶¨Ïò°²ÖÃ·¿ÏîÄ¿	×Ü½¨ÖþÃæ»ýÔ¼36.16ÍòÆ½·½Ã×
+
+Æ½°²Ö¤È¯£º  307100795182 / 423878
+
+cdl1: B2azil14
+
+port HybridBuildOut code to linux:
+1. for Robin's configutration tools, Extension Manager so Library for linux should be built. based on Release 8.5.3FP5 pack
+2. h
+3. all codes should be fully tested on linux.
+
+
+load dircat <edc database> -r 
+
+tell adminp process all
+
+blacklist-TST-25753A
+blacklist-TST-49786F
+blacklist-TST-E52E3D
+blacklist-TST-D28013
+blacklist-TST-924B97
+blacklist-TST-105797
+blacklist-TST-5745C1
+
+show xdi
+
+DebugRouter=3
+Log_MailRouting=40
+Debug_ThreadID=1
+Console_Log_Enabled=1
+
+hihan@internal.hybridhan.scn.cn.ibm.com,hizhang@internal.hybridhan.scn.cn.ibm.com,hellohan@hybridhan.scn.cn.ibm.com,hellozhang@hybridhan.scn.cn.ibm.com
+
+telnet 9.111.36.61 25
+helo test001
+mail from: <test001@qq.com>
+rcpt to: <shjiehan@hymaila.scn3.cn.ibm.com>
+data
+asdasd
+.
+quit
+
+DISABLE_SSLV3=1
+DISABLE_SSLV2=1
+
+º£µíÇø¶«±±ÍúÄÏÂ·27ºÅ
+
+FLTR - add hardware
+
+chinapd.cn.ibm.com
+administrator/asfDEF99
+F:\KTPServices\eclipse.exe
+
+
+MSMPrimDir=data1
+MSMPrimServer=cdl2-mail12/scn2
+SAAS_TEST_MODE=1
+MSMSecDir=data1
+MSMSecServer=cdl2-mail06/scn2
+
+llbb3hymaster.scnbb3.scn3.cn.ibm.com  root/Pa00w0rd
+
+8151103146689
+6541103537978
+
+cdl3hycox_admin@chinapd.cn.ibm.com / passw0rd
+cdl3hycox
+
+9.111.36.90
+9.111.36.91
+9.111.36.92
+9.111.36.93
+9.111.36.94
+9.111.36.98
+9.111.36.99
+9.110.92.199
+9.110.92.201
+9.110.92.202
+9.110.92.203
+9.110.92.204
+9.110.92.205
+
+
+llbb3hyhuba.scnbb3.swg.usma.ibm.com  10.1.20.208
+llbb3hyhubb.scnbb3.swg.usma.ibm.com  10.1.20.209
+llbb3hymaila.scnbb3.swg.usma.ibm.com  10.1.20.210
+llbb3hymailb.scnbb3.swg.usma.ibm.com  10.1.20.211
+llbb3hypassthrua.scnbb3.swg.usma.ibm.com  10.1.20.212
+llbb3hypassthrub.scnbb3.swg.usma.ibm.com  10.1.20.213
+
+llbb1hyhuba.scnbb1.swg.usma.ibm.com  10.1.20.183
+llbb1hyhubb.scnbb1.swg.usma.ibm.com  10.1.20.184
+llbb1hymaila.scnbb1.swg.usma.ibm.com  10.1.20.185
+llbb1hymailb.scnbb1.swg.usma.ibm.com  10.1.20.186
+llbb1hypassthrua.scnbb1.swg.usma.ibm.com  10.1.20.206
+llbb1hypassthrub.scnbb1.swg.usma.ibm.com  10.1.20.207
+
+
+root/widget@1bm
+
+John Curtis meeting:
+4008-210-751   participant Code: 80030493
+
+db2 update db cfg for con_home using LOGARCHMETH1 OFF
+db2 update db cfg for con_home using LOGRETAIN OFF
+
+NPC:
+GA9 FPR, Repairshop, 
+Ringcloud admin, 
+GLider3 administrator, 
+Solr automation development, 
+dev-la administrator, 
+Own DenyList design and automation development, 
+Own UE automation dev and repairshop, 
+Jenkins slaves admin and configure, 
+SCN test data and test configuration for all gliders.
+
+ftp3linux password: Jerys11n
+
+shjiehan/iris / jerys08n
+
+cdl_cc\shjiehan / Jerys09n
+
+wplc password: jerys07n
+
+taobaoÕË»§£º
+shengjie_han/ jerys00n 18910572238/jerys00n ÒÑÓÐÖ§¸¶±¦
+
+ÐÂÀËÎ¢²©£º 420013878@qq.com/jerys00n
+
+IRIS ÃÜÂëÐÞ¸Ä£º https://w3.swg.usma.ibm.com/accounts/ 
+
+https://ipcrs.pbccrc.org.cn  lanying_wei / Jerys00n
+
+51642637  ÄÏ¿ÚÐËÂ¡½Ö¾ÓÎ¯»á
+23.  Ãû³Æ£º±±¾©²©ÑÅÍ¼Æ¬Éç
+       µØÖ·£º±±¾©ÊÐº£µíÇøÅ©´óÄÏÂ·Ïá»ÆÆìÍòÊ÷Ô°Ð¡Çø24ºÅÂ¥40ºÅµ×ÉÌ
+       µç»°£º82791495 /  13341038982 /  13439808030 
+
+
+http://app.maiyadi.com/app-674699/#p=1     µÛ¹úÊ±´úmac
+
+innovation:
+Announcement delay for away user;
+checkbox for group chat/announcement
+directly send email on UIM
+
+***********************
+netsh wlan set hostednetwork mode=allow ssid=shjiehan-pc key=passw0rd keyusage=persistent
+netsh wlan start hostednetwork
+
+
+
+I'll make a few assumptions here, but:  You have an established internet connection, but want to share the internet off of another card?  For instance, your computer is connect via a wireless router, but you have an Xbox360/Playstation3/etc connected via wire from the PC?  You turn on ICS and your wired device isn't resolving an IP address?
+
+ 
+
+The solution is rather simple, no need to setup a DHCP server or use 3rd party software.  Under Networks and Sharing Center, click on the connection you wish to share.  Click Properties and then select the Sharing Tab.  Click the Settings button.  You will see a list of services available for this connection.  You'll need to add two.  Click the "Add", Give the new service a name (I use DHCP 67 and DHCP 68 respectively, but it really doesn't matter).  Put in the IP Address of your router in the next field and put 67 in the Internal and External port numbers.  Click OK, then repeat with Port 68.
+
+ 
+
+This will allow all connections on the wired connect to "pass through" the shared connection to pull IP and DNS from the router.
+
+
+**********************
+
+ibm-yum.sh groupinstall "Development Tools" 
+ibm-yum.sh grouplist
+
+VPN Server: 202.108.130.173
+
+libmotif3 libgnome-desktop-3-0 libgnome-desktop-3-2 
+
+https://usablesoftware.wordpress.com/2012/05/04/install-lotus-notes-8-5-3-on-ubuntu-12-04-64bit/
+
+http://msdn.microsoft.com/zh-cn/subscriptions/downloads/default.aspx?pv=36:350#searchTerm=&ProductFamilyId=350&Languages=en&Architectures=x64&PageSize=10&PageIndex=0&FileId=0
+WYVBP-28H6K-VCJVT-9MRBK-4KRHX
+
+http://w3.ibm.com/download/standardsoftware/
+http://w3.ibm.com/tools/print/index.html
+
+w3.hursley.ibm.com/java/jim/ibmsdks/latest/aixppc64/70servicerefresh5aixppc64pap6470sr52013061901j9/index.html
+
+Ëæ×ÅcloudºÍ¼ÆËã»úÐéÄâ¼¼ÊõµÄ·¢Õ¹£¬ÔÚIBMÔ½À´Ô½¶àµÄ¿ª·¢²âÊÔµÄ»·¾³¶¼²¿Êðµ½cloud»òvirtual machineÉÏ¡£ÒÔÇ°£¬ÎÒµÄÒ»Ð©¹«ÓÃ·þÎñÆ÷£¬ÀýÈçLDAP·þÎñÆ÷£¬¶¼²¿ÊðÔÚÊµÌå»úÉÏ£¬Ëæ×ÅÕâÐ©ÊµÌå»úÖð²½±»scrap£¬ÎÒÃÇ¾ÍÃæÁÙ×ÅÒª½«ÕâÐ©¹«ÓÃLDAP·þÎñÆ÷Ç¨ÒÆµ½cloud»òVMÉÏ¡£±¾ÎÄ¾ÍÊÇ»ùÓÚÕâÖÖ±³¾°£¬ÏêÏ¸ÃèÊöÁËMicrosoft Active Directory 2003µÄÇ¨ÒÆ¹ý³Ì£¬ÒÔ¼°Ç¨ÒÆ¹ý³ÌÖÐ½«»áÓöµ½µÄÎÊÌâ¼°Æä½â¾ö·½·¨£¬¹©ËùÓÐIBMµÄÍ¬ÊÂ·ÖÏíºÍ²Î¿¼¡£
+
+icl\icl_2440.nsf
+
+1. Microsoft Active Directory¼ò½é
+2. Active Directory 2003Ç¨ÒÆ¹ý³ÌÏê½â
+3. Ç¨ÒÆ¹ý³ÌÖÐÓöµ½µÄÎÊÌâ¼°Æä½â¾ö°ì·¨
+4. ²Î¿¼ÐÅÏ¢Á´½Ó
+
+Hype-V:  9.125.12.235  administrator/Samet1me
+50970682
+
+AD2003:
+http://www.cnblogs.com/virusswb/archive/2009/10/30/1593336.html
+http://blogs.msdn.com/b/muaddib/archive/2012/01/08/backing-up-active-directory-objects-using-ldifde.aspx
+Raise Domain Functrional Level
+ldifde -m -d "OU=ÖÐÎÄ²âÊÔ×éÖ¯µ¥Ôª,DC=lotus,DC=com" -p subtree -o "uSNCreated,uSNChanged,objectguid,whencreated,whenchanged,dSCorePropagationData,jpegPhoto"  -f zhongwen.ldf
+ldifde -m -d "DC=lotus,DC=com" -p subtree -r "(|(objectClass=user)(objectClass=group))" -o "uSNCreated,uSNChanged,objectguid,whencreated,whenchanged,dSCorePropagationData,jpegPhoto"  -f root.ldf
+ldifde -i -k -f zhonge.ldf
+µ¼³öÓòÓÃ»§ÃÜÂë¡¾²»ÄÜÔÚÔ¶³ÌÖÐÖ´ÐÐÕâ¸öÃüÁî£¬Ö»ÄÜÔÚ±¾»úÊ¹ÓÃÕâ¸öÃüÁî£¬ÔËÐÐµÄÍ¬Ê±×¢Òâ¹Ø±Õ·À»ðÇ½Èí¼þ,²»ÄÜÐÞ¸ÄÃüÁîÖÐµÄÎÄ¼þÃûcopypwd.txt¡¿
+copypwd dump > copypwd.txt
+µ¼ÈëÓòÓÃ»§ÃÜÂë£¬×Ô¶¯²éÕÒÍ¬Ä¿Â¼µÄcopypwd.txtÎÄ¼þ
+copypwd set 
+
+md5sum 
+
+8151103146689
+
+ÍÅ¹º£º
+http://www.lashou.com/account/orders/
+shjiehan@cn.ibm.com  jerys00n
+Ó¢ÓïÑ§Ï°£º
+www.unsv.com shengjie_han@hotmail.com/jerys00n
+
+http://vmstfvt01.swg.usma.ibm.com:8700/ibm/console
+
+vpn: Jerys11n
+
+/opt/IBM/WebSphere/AppServer/java/bin/java -cp "lib/*" com.ibm.sametime.mcu.utils.postinstall.VMcuSetAnonAuthToken https://localhost SUPPORT SUPPORT -1 /opt/IBM/Sametime/STVideoMCU
+
+mux²»ÐèÒª°²×°domino
+
+notes.ini:
+TCP_EnableIPV6=1
+
+ip -6 addr add 2002:97D:EEC3:610:9:125:12:195/64 dev eth0 
+ip -6 route add default via 2002:97D:EEC3:610::610 dev eth0
+
+https://w3.tap.ibm.com/w3ki08/display/ITRep/2.+IPv6+in+CDL
+
+http://w3-103.ibm.com/software/xl/download/ticket.do
+
+fdisk 
+   14  fdisk /dev/sda
+   15  reboot
+   16  pvcreate /dev/sda3
+   17  vgextend VolGroup /dev/sda3
+   18  lvextend -l +123123 /dev/VolGroup/lv_root
+   19  lvextend -l +12799 /dev/VolGroup/lv_root
+   20  resize2fs /dev/mapper/volGroup-lv_root
+   21  resize2fs /dev/mapper/VolGroup-lv_root
+
+DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\sources\sxs
+
+aola.100bt.com  Sunshine2002/Passw0rd
+
+https://stvm128:8443/dma7000/
+
+VPN: Jerys04n
+
+rpm -e --noscripts `rpm -qa|grep Sametime` (Notice backticks)
+rpm -e  `rpm -qa|grep ibm-sametime`
+rm -rf /opt/IBM/Sametime/STAVMCU
+rm -rf /opt/IBM/Sametime/STVideoMCU
+rm -rf /tmp/RPMs
+
+Set AWARENESS_EXTERNAL_NEED_PERMISSION=1 in sametime.ini under [Config] section.
+
+STGW:
+C:\Program Files (x86)\Common Files\InstallShield
+/root/InstallShield
+
+9.123.109.2  stvm128
+
+VPS_BYPASS_TRUSTED_IPS=1
+VP_TRACE_ALL=1
+vp_ldap_trace=1 
+
+ST Gateway:  db2 -tvf createDb.sql
+
+SSC new admin roles:
+Administrator
+Operator
+All Authenticated Users
+
+º£µíÇøÂíÁ¬ÍÝ½ÖµÀÃ·Ô°ÉçÇøÎÀÉú·þÎñÕ¾(8162047)
+±±¾©ÊÐÉÏµØÒ½Ôº(8110041)
+ÖÐ¹úÈËÃñ½â·Å¾üµÚ¶þÅÚ±øÇåºÓÃÅÕï²¿(8131035)
+Ê×¶¼Ò½¿Æ´óÑ§¸½Êô±±¾©°²ÕêÒ½Ôº(5110002)
+
+chmod 755 /bin/ibm-yum.sh 
+ibm-yum.sh install openssl.i686
+ibm-yum.sh install openssl krb5-libs mailcap libxml2 libip4tc.so.0 libiptc.so.0 libstdc++ libz.so.1 dialog net-snmp
+ibm-yum.sh install dialog net-snmp
+ibm-yum.sh install openssl-1.0.0-20.el6_2.5.i686
+ibm-yum.sh update openssl
+ibm-yum.sh libxml2-2.7.6-4.el6_2.4.i686
+ibm-yum.sh libxml2
+ibm-yum.sh install libxml2-2.7.6-4.el6_2.4.i686
+ibm-yum.sh install libstdc++
+ibm-yum.sh install libstdc++-4.4.6-4.el6.i686
+ibm-yum.sh install iptables-1.4.7-5.1.el6_2.i686
+ibm-yum.sh install dos2unix
+ibm-yum.sh install dos2unix-3.1-37.el6.i686
+
+
+9.123.114.201
+9.123.114.199
+9.123.114.154
+9.123.114.207
+
+KVM Processor Pinning:
+# for i in `ls /sys/devices/system/cpu/cpu0/cache/`; do
+> for f in level type size; do
+> echo -n "$i $f is "
+> cat /sys/devices/system/cpu/cpu0/cache/$i/$f
+> done
+> done
+
+# for i in `seq 0 15`; do
+> echo -n "cpu$i "
+> cat /sys/devices/system/cpu/cpu$i/cache/index2/shared_cpu_map
+> done
+
+# virsh vcpupin stvm106 0 0,12
+# virsh vcpupin stvm106 1 0,12
+# virsh vcpupin stvm106 2 1,13
+# virsh vcpupin stvm106 3 1,13
+
+
+Old: VIPBJ04C01WPLC004, 9.115.40.123 
+vm name:
+RHEL5-U9-64_9.115.71.71 
+and bxv4v267
+New: 
+vc server : 9.110.83.23
+resource pool:VIPBJ07C01ICS
+vm name and ip address:
+ 9.110.84.60 BXV7V323
+9.110.84.61 BXV7V324
+
+
+http://csdld01.cn.ibm.com/ITweb.nsf/ContentDocsByTitle/Ring+Cloud+2.0+BU+admin+list
+
+Accessibility: refer to defect 8252
+
+ÏÈ²¦10£¸£°£°£·£±£±£±£°£·£±£¬È»ºó56968429?
+http://stmeetings.in.ibm.com:9080/stmeetings/room/subharam@in.ibm.com/st9migration
+
+MTS: HHKK	HD035281  Jerys06n
+MSDN:   shengjie_han@hotmail.com / jerys0n
+ftp3.linux.ibm.com:  shjiehan@cn.ibm.com / jerys01n
+MVD99-VJH64-YQHMW-7KFJ6-2T6YQ
+
+/opt/IBM/WebSphere/AppServer/profiles/wplccdlvmSTMDMProfile1/config/cells/wplccdlvmSTMCell1/nodes/DMgrNode/serverindex.xml     WC_adminhost
+
+iostat -x -k
+
+STPRESENCE_TRACE=finest
+
+For MCU on RHEL5.4:
+ibm-yum.sh update libstdc++ openssl krb5-libs
+ibm-yum.sh install net-snmp
+
+Linux hostname:
+ÐÞ¸Ä/etc/sysconfig/networkÎÄ¼þ
+
+ftp://ftp3.linux.ibm.com/  jerys18n
+
+netstat -an|find "1533"
+
+Domino trace: sametime.ini
+VP_TRACE_ALL=1
+
+push stvm135/ibm names
+
+setupwin32.sp  :  STSkipDominoVersionCheck=true
+
+ctteam/Zhu88jie  tivx69
+cert4apm
+
+http://w3-103.ibm.com/software/xl/download/ticket.do
+https://port.rchland.ibm.com/support/fixcentral/ac/signin  
+http://www-933.ibm.com/support/fixcentral/ 
+IBM Fixpack:
+shengjie_han@hotmail.com / jerys0n_1
+
+winxp-professional-64:
+DW7R9-KMBRP-CF3VC-RK6JW-RB8XB
+win2008 R2 cdkey:
+H8Q68-3BWJD-69F7H-9VYVJ-2GTRM
+Win7 Sp1 cdkey:
+DYDRX-QFTM6-KHRV7-CDCFQ-4P69Y Ã»ÓÃ¹ý
+Win8 cdkey:
+9QDN8-G39MQ-BWVR9-Y2R2K-MG667
+Win2012 cdkey:
+WCF9T-NGY2Q-D3FC4-VP63J-JFDKJ
+Win2012 R2 cdkey:
+MGXJH-2NGCF-BMPVK-G2RJT-KTK8M
+Windows 2003: 
+HC2VR-9FJ73-8CPPV-3RWTT-R8BQY
+Windows 2016
+YBCWP-MDNXD-RK3QT-3V9CK-RM63F 
+
+KVM vmÄ£°åµÄÓ¦ÓÃ£º
+1. °²×°Ò»¸öÄ£°åOS win8(not set hostname and IP)
+2. shutdown OS
+3. virsh dumpxml win8 > stvm126.xml
+4. cp -fr /VMDisk/images/win8.img /VMDisk/images/stvm126.img
+5. ÐÞ¸Ästvm126.xml
+   <name>stvm126</name>  //ÓòÃûÐèÐÞ¸Ä
+   <uuid>6d225905-28a6-5491-042e-280b70e50e10</uuid>  //UUIDÖµÖ±½ÓÉ¾³ý¾Í¿ÉÒÔÁË
+    <source file='/VMDisk/images/win8.img'/>     //¸Ã³Éstvm126.img
+    <mac address='52:54:00:ab:82:03'/>   //¸ÃÖµÓÐÎ¨Ò»ÐÔ£¬ÐèÒªÐÞ¸Ä
+6. virsh define stvm126.xml   //¶¨Òåxml¼ÓÈëÐéÄâ»ú
+7. virsh start stvm126
+ 
+
+ mount -o username=shjiehan,password=Jerys04n -l //9.125.240.48/daily /mnt
+mount -o username=shjiehan,domain=iris,password=Jerys19n -l //9.70.223.28/nd/dailykits/V901FP8 /build/nd
+ mount -o username=shjiehan,password=Jerys04n -l //9.125.241.99/ndunix /mnt
+\\ndbuild.cn.ibm.com\ndunix\dailykits\V901\V901_06022013prod\linux\Domino
+
+IBMIM.exe -record c:\temp\responsefile.xml -skipInstall c:\temp\recordData
+IBMIMc.exe -acceptLicense --launcher.ini silent-install.ini -input c:\temp\responsefile.xml
+"C:\Program Files\IBM\Installation Manager\eclipse\tools\imcl.exe input c:\temp\responsefile.xml -showVerboseProgress -acceptLicense -log silent_install_log.txt
+
+
+app store: hanshengjiehsj@yahoo.com.cn / Jerys00n
+
+win8 account: hanshengjiehsj@yahoo.com.cn / jerys00n
+
+SSC:  http://wplccdlvm011.cn.ibm.com:8700/ibm/console
+ST admin: http://wplccdlvm011.cn.ibm.com:8700
+MS: http://wplccdlvm011.cn.ibm.com:9080/stmeetings
+AS: http://stvm135.cn.ibm.com:9082/stadvanced
+Proxy: http://stvm136.cn.ibm.com:9080/stwebclient/index.jsp
+
+¼ÝÐ£:  shjiehan/jerys00n
+
+cd /etc/sysconfig/network-scripts/
+ls
+cp ifcfg-eth2 ifcfg-br0
+vi ifcfg-br0
+vi ifcfg-eth2
+brctl addbr br0
+brctl addif br0 eth2
+brctl show
+
+
+For CommunityServer:
+/etc/security/limit.conf
+*       soft    nofile  65535
+*       hard    nofile  65535
+
+rpm -e --noscripts Sametime-VideoMCU-Installer-9.0.0-20130606.1612.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-SoftMcuMfwMain-8.1.2.190-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-EngineMRM-8.1.2.19-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-UI_AIM-8.1.2.9-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-jsoncpp-8.1.2.9-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-libphp-8.1.2.9-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-httpd-8.1.2.9-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-VmpSoft-8.1.2.10-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-MpProxy-8.1.2.10-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-AmpSoft-8.1.2.10-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-Rmx1000-8.1.2.10-1.el5.x86_64
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-Mpmx-8.1.2.16-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-Cs-8.1.2.14-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-Ema-8.1.2.5-1.el5.i386
+rpm -e --noscripts ibm-sametime-vmcu-9.0.0.1-Mcms-8.1.2.85-1.el5.i386
+
+
+\\wplcbld.cn.ibm.com:
+cdl_cc\shjiehan     Jerys06n
+
+
+title: smardcold plugin mis-use on prem dir saving log
+6:25:42 PM: Hong Zhu Wang: browser is clean, no any plugin install
+6:26:23 PM: Hong Zhu Wang: install smartcloud plugin from daily, set logflag=16 in webplayer.ini, refresh room page, start call
+6:28:58 PM: Hong Zhu Wang: => no any sip log, softphone log under cloud logs dir, but after softphone init, generate lotus\sametime webplayer dir, and logs in it, have to move the webplayer.ini from cloud dir to lotus folder, then log created under Lotus\Sametime WebPlayer\Logs
+6:29:36 PM: Hong Zhu Wang: issue is new plugin still locate log from on prem dir. this is very bad for tester and enduser collect log for debug. should be fix
+gehua-shuzhoujie:68403171
+
+http://javatester.org/version.html
+
+E254974929
+
+www.jd.com   shengjie_han@hotmail.com /jerys0n_1975
+
+for softphone issue, like crash, join call failed sip.log has err - akash; ui issue to anju, join call fail no error in sip log, so tcspi, proxy issue, to sandeep
+1:10:31 PM: Hong Zhu Wang: ui issue also can vevik 
+
+arkadin020@mailinator.com,019, 018
+log_level=finer
+
+microsoft account for win8: hanshengjiehsj@yahoo.com.cn / jerys00n
+
+Polycom Distributed Media Application (DMA)
+
+baidu wenku: shengjie_han99/jerys0n
+mac App Store: hanshengjiehsj@yahoo.com.cn / Jerys00n
+¾©¶«£º  hanshengjiehsj@yahoo.com.cn/jerys00n
+
+https://getfirebug.com/downloads
+
+wireless pwd: Jerys00n*001
+
+webDriver.findElement(By.xpath(xpath_MyDashboard));
+$x('//*[@id=\'nav_bar_include\']/div/div/ul[1]/li[2]/a')
+
+
+
+webDriver.findElement(By.id(SmartCloud_LOGIN_BTN));
+$('submit_form')
+
+IRIS\linyuebj
+Samet1me*!001
+
+automation: \\9.123.118.248\SametimeShare\temp
+
+http://9.123.145.61/proxy61.pac
+
+tijian: ciming 10-27  wang412
+62981881 
+13651332877
+
+shebaochaxun: http://www.bjld.gov.cn/csibiz/indinfo/index.jsp  / jerys00n
+HHKK	HD035281  Jerys04n
+
+9.123.145.141 - chenming/LC20120901
+
+http://apps.lotuslivenotes.swg.usma.ibm.com
+jianfeng204@ivthouse.com/passw0rd
+Browser:  support IE7/8/9,FF14 or later
+
+http://apps.d6.swg.usma.ibm.com
+Website: https://apps.d6.swg.usma.ibm.com/manage/account/dashboardHandler/input
+BSS admin: bssadmin@us.ibm.com / passw0rd
+bluebox.lotus.com
+
+https://stmeetings.d6.swg.usma.ibm.com/SSCConnecter/buildinfo.txt
+https://stmeetings.collabservdaily.swg.usma.ibm.com/SSCConnecter/buildinfo.txt
+
+96290
+
+C:\Users\IBM_ADMIN\AppData\LocalLow\IBM\Lotus\Sametime WebPlayer
+C:\Windows\Downloaded Program Files
+http://stkvmg17.cn.ibm.com:9080/stmeetings/  whzad1/password
+https://apps.collabservdaily.swg.usma.ibm.com/contacts/dashboard/index
+arkadin002@mailinator.com   
+
+NHM: network health monitering
+
+MAc ??:  command + shift + 3/4
+
+issue for  non arkadin provision meeting.
+
+Steps:
+lily5daily@yopmail.com - non arkadin provision
+lily6daily@yopmail.com - non arkadin provision
+arkadin002@mailinator.com - with arkadin provision
+1. non arkadin provision user lily5daily host meeting 6684-2164, in lily5daily meeting UI, "Start Call" button was showed under Audio Conferencing.
+    Bug: For non arkadin provision user lily5daily, "Start Call" button shouldn't be showed in itself host meeting, because non arkadin provision user lily5daily can never start call in itself hosted meeting. So "Start Call" button here should always be showed as "Not Available".
+2. another non arkadin provision user lily6daily join lily5daily hosted meeting 6684-2164, "Waiting for Moderator ..." was showed under Audio Conferencing.
+   Bug: For the non arkadin provision user lily6daily join non provision user lily5daily hosted meeting, "Waiting for Moderator ..." will always be there and it has no way to join the call for ever. Because non arkadin provision user lily5daily has no way to start call in its hosted meeting. So "Waiting for Moderator ..."  here should always be showed as "Not Available".
+3. arkadin provision user arkadin002 join lily5daily hosted meeting 6684-2164, "Waiting for Moderator ..." was showed under Audio Conferencing.
+   Bug: For arkadin provision user arkadin002 join non provision user lily5daily hosted meeting, "Waiting for Moderator ..." will always be there and it has no way to join the call for ever. Because non arkadin provision user lily5daily has no way to start call in its hosted meeting. So "Waiting for Moderator ..."  here should also always be showed as "Not Available".
+
+AIX 7.1 64bit ITCAM AGENT FOR WMQ FTE 7.0.1(MQ7.5/FTE7.5)
+
+LFA Automation:
+/opt/apache-ant-1.7.1/bin/ant -Dtestclass=TestDB2Diag -f ./test.xml
+
+Solaris:
+# uname -X
+# more /etc/release
+# prstat
+# prstat -m -Z -n 1,8192 1 1     (get zones information)
+sol-11-1111-repo-full.iso-a/b on tivx061:/kvmdisk
+zonecfg -z dbdb:
+ No such zone configuredUse &apos;create&apos; to begin configuring a new zone.zonecfg:db> create
+create: Using system default template &apos;SYSdefault&apos;
+zonecfg:db> set zonepath=/zones/db
+zonecfg:db> set autoboot=true
+zonecfg:db> remove anet
+zonecfg:db> set ip-type=shared
+zonecfg:db> add net
+zonecfg:db:net> set address=192.168.211.48
+zonecfg:db:net> set configure-allowed-address=false
+zonecfg:db:net> set defrouter=192.168.211.1
+zonecfg:db:net> set physical=v13ipmp0
+zonecfg:db:net> end
+zonecfg:db> verify
+zonecfg:db> commit
+zonecfg:db> exit
+
+# zoneadm -z test install
+# zoneadm -z test boot
+# zlogin -C
+
+
+/opt/IBM/ITM4/bin/cinfo -h /opt/IBM/ITM4
+
+./fteSetupCoordination -coordinationQMgr QM2 -coordinationQMgrHost tivvm498.cn.ibm.com -coordinationQMgrPort 1414 -coordinationQMgrChannel SYSTEM.DEF.SVRCONN
+./fteSetupCommands -connectionQMgr QM1 -connectionQMgrHost tivp065.cn.ibm.com -connectionQMgrPort 1414 -connectionQMgrChannel SYSTEM.DEF.SVRCONN
+./fteCreateAgent -agentName AGENT1 -agentQMgr QM1 -agentQMgrHost tivp065.cn.ibm.com -agentQMgrPort 1414 -agentQMgrChannel SYSTEM.DEF.SVRCONN
+ALTER QMGR CHLAUTH(DISABLED) (run on QM1/QM2) Ä¬ÈÏÊÇenabledµÄ,ËùÒÔfteagentÆð²»À´
+
+/opt/IBM/ITM/bin/itmcmd execute cq "ldd /opt/IBM/ITM/lx8263/cq/lib/KfwSQLAdaptDB2"
+
+db2 catalog tcpip node tivsun25 remote 9.123.102.221 server 50000
+db2 catalog db warehous as warehous at node tivsun25
+
+
+tvt2029/zhu33jie
+
+KBB_RAS1='ERROR (UNIT:kux ALL) (UNIT:kra ALL)'
+
+2930
+
+http://www.docin.com/p-194050128.html
+
+DB2ÖÐ±íÃûÇø·Ö´óÐ¡Ð´µÄÎÊÌâ:
+db2 select * from \"Service_Flow_Metrics_Q\"
+
+TCR Console:
+http://tivp065.cn.ibm.com:16310/ibm/console
+
+ftp://ftp.software.ibm.com/aix/freeSoftware/aixtoolbox/RPMS/ppc/zlib/
+
+Message Broker Agent:
+/opt/ibm/mqsi/7.0/bin/mqsichangeflowstats BK1 -a -e default -g -j -o xml -t basic -c active -n advanced
+/opt/ibm/mqsi/7.0/bin/mqsichangeflowstats BK1 -s -e default -g -j -o xml -t basic -c active -n advanced
+/opt/IBM/ITM/config/kqi.xml
+    defaultReplyQueueModel="SYSTEM.BROKER.INTERBROKER.MODEL.QUEUE"
+    defaultCollectNodeData="YES"
+    defaultPersistentBrokerData="YES"
+
+
+suse messages no new entry:
+http://linuxpoison.blogspot.com/2009/01/how-to-enable-disable-novell-apparmor.html
+http://opensuse.14.n6.nabble.com/syslogd-not-running-td3002680.html
+
+Message broker: to enable Archive/Snapshot Message Flow Accounting:
+/opt/ibm/mqsi/7.0/bin/mqsichangeflowstats BK1 -s -e default -g -j -o xml -t basic -c active -n advanced
+/opt/ibm/mqsi/7.0/bin/mqsichangeflowstats BK1 -a -e default -g -j -o xml -t basic -c active -n advanced
+
+testware:
+tivx57:  itcam/mz0neren
+
+itmx23:
+administrator / Ams49test
+
+To start the nmc topology console, issue the following commands:
+cd /usr/local/Tivoli/bin/generic_unix/TDS/client/bin
+./tconsole.sh ..
+
+http://archive.apache.org/dist/ant/binaries/
+
+IBM Fix Center: shengjie_han@hotmail.com / jerys0n_1
+oracle: shengjie_han@hotmail.com / Jerys0n_1
+
+netapp defect: 179989, ctpm defect 2914
+
+105610153
+
+Configuring Windows Gateway server for TADDM discovery:
+http://publib.boulder.ibm.com/infocenter/tivihelp/v10r1/topic/com.ibm.taddm.doc_7.2/AdminGuide/t_cmdb_configcygwin.html
+
+KVM agent:
+KVM server:  rpm -ivh netcat-openbsd-1.89-78.6.1.x86_64.rpm
+
+startTCRserver.sh/stopTCRserver.sh -user tipadmin -password zhu88jie
+
+http://ftp.hosteurope.de/mirror/ftp.opensuse.org/discontinued/SL-10.1/inst-source/suse/x86_64/
+http://download.opensuse.org/factory/repo/oss/suse/x86_64/
+http://opensuse.compro.net/distribution/11.0/repo/oss/suse/i586/
+
+gdcwin04.tivlab.raleigh.ibm.com
+opcagent/go0green
+
+»úÐµÏµ: ÍÐÂíË¹,÷»×Ó´óÍõ
+ÊýÂëÏµ: »ê¶·Óã,
+
+http://bjgy.chinacourt.org/fygg/
+ÓÐ·¨ÔºÅÄÂôÐÅÏ¢.
+
+http://pay.9aola.com/site/mycard.jsp
+¶à¶àºÅ: 126214170
+
+Sun Java download:
+http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html
+
+k1071 ±±¾©Î÷£­°²Çì
+
+db2 -tvf /image/create_db2.sql
+
+zhoushaop@21cn.com
+
+https://edelivery.oracle.com/:
+login: lanying_wei@yahoo.com.cn / Jerys0n_1
+
+oracle update instance:
+http://blog.csdn.net/tianlesoftware/article/details/5507762
+
+1. On Oracle Application Server Disk 1, go to the install/soa_schemas/irca
+directory.
+2. Run the irca.sh script.
+
+cmvc:
+acmetool@acmetool.tivlab.raleigh.ibm.com@1404 hanshj
+defect: 39049/50 itcamfsoa 7.1.1 fp3
+candle@auscmvc.tivlab.austin.ibm.com@3006 hanshj
+ibu@castor.tivlab.austin.ibm.com@1224 hanshj
+*****************************
+Installing on AIX 6L requires the following installations:
+?Oracle patch 6613550
+?Oracle Database 10g release 2 (10.2.0.1)
+?Oracle Database patch set 10g release 2 (10.2.0.3)
+
+
+http://www.docin.com/p-77315989.html
+°üº¬ebspatch°²×°¹ý³Ì
+
+EBS:
+adstpall.sh apps/apps
+addlnctl.sh start/stop test  listener
+addbctl.sh start/stop immediate
+
+adopmnctl.sh 
+OPMN 
+./adopmnctl.sh start»òstop 
+
+adapcctl.sh 
+APACHE 
+./adapcctl.sh start»òstop 
+
+adoacorectl.sh 
+OACORE 
+./adoacorectl.sh start»òstop 
+
+adformsctl.sh 
+FORMS 
+./adformsctl.sh start»òstop 
+
+adoafmctl.sh 
+OAFM 
+./adoafmctl.sh start»òstop 
+
+adalnctl.sh 
+Report Engin 
+./adalnctl.sh start apps/apps»òstop 
+
+adcmctl.sh 
+concurrent manager 
+./adcmctl.sh start»òstop 
+
+jttfmctl.sh 
+Fulfillment 
+./jttfmctl.shstart»òstop 
+
+oracleÓÃ»§Ä¬ÈÏÓÃbash
+http://tivp063:8000
+sysadmin/sysadmin
+ system/manager
+sys/change_on_install
+OAS install on aix61:
+ ./runInstaller ¨CignoreSysPrereqs¡¯
+ emctl stop agent
+isqlplusctl stop/start
+
+**************************************
+dd if=/dev/zero/ of=/dev/rhdisk1 bs=1024 count=10
+
+ftp://ftp.software.ibm.com/software/tivoli_support/patches/patches_7.1.0/7.1.0-TIV-ITCAMAD-FP0002/
+
+itmuserÓ¦¸Ã¼Óµ½db2admin×éÀïÃæ£¬·ñÔòwarehousÊÕ¼¯ÀúÊ·Êý¾ÝÊ±ºò¾Í»á£º
+ERROR MESSAGE: "Initialization with Datasource "jdbc:db2://localhost:50000/WAREHOUS" failed with status CTX_JavaError. 
+
+netapp:
+itmx29.tivlab.raleigh.ibm.com
+administrator / Ams49test
+
+itmw081.tivlab.raleigh.ibm.com
+itmw032.tivlab.raleigh.ibm.com
+
+
+Netview ZOS can't login TEP:
+windows:
+C:\IBM\ITM\CNPS\kfwenv
+/opt/IBM/ITM/config/cq.ini
+uncomment:  #USE_EGG1_FLAG=1
+
+omnibus:
+nco_config
+nco_event
+nco_pad
+startSUF.sh
+sitconfsvruser.sh add serverid=tivm15.cn.ibm.com userid=Administrator password=zhu88jie pathc=/opt/IBM/SitForwarder/etc/ type=OMNIBUS
+
+Linux/UNIX DB2 auto start:
+# db2iauto -on db2inst1
+
+ITCAMfMQ:
+http://publibz.boulder.ibm.com/cgi-bin/bookmgr_OS390/BOOKS/CSQSAO00/APPENDIX1.1.2?SHELF=AMQZA90C&DT=20001019223242
+
+TDI:
+http://tivs06:13100/ibm/console
+TDI_install_dir/bin/amc folder:
+    * To start AMC, run the start_tdiamc script.
+    * To start AM, run the startAM script.
+
+tcr:
+http://tivs06.cn.ibm.com:16310/ibm/console
+
+http://rtpgsa.ibm.com/projects/~zpackaging/isos/
+
+Ìì½ò¸Û 600717
+Ì©´ï¹É·Ý 000652
+½ò±õ·¢Õ¹ 000897
+
+tvt4147 / zhu11jie
+
+d vm30005
+tso root
+tivmvs
+
+Netcool/OMNIbus:
+cp /etc/pam.d/passwd /etc/pam.d/netcool
+
+AIXÐÞ¸ÄÖ÷»úÃû£º
+chdev -l inet0 -a hostname=new
+vi /etc/hosts
+uname -S hostname
+
+lsvg rootvg
+chvg -t 2 datavg
+extendvg rootvg hdisk1
+chfs -a size=+10G /
+lslv hd4
+smit chlv==>Change a logical Volume==>Logical volume name==>F4(Ñ¡ÔñÄãÒªÐÞ¸ÄµÄlvname)»Ø³µITPUB¸öÈË¿Õ¼äPB&I Ku4qtyQ
+ÔÚMAXIMUM NUMBER of LOGICAL PARTITIONS [1024] °ÑÊýÖµÒ»¸Ä£¬»Ø³µºó£¬¼ûµ½×óÉÏ½Ç¡°OK¡±ITPUB¸öÈË¿Õ¼ä]"`d4e#~ _7h
+±íÊ¾ÎªÐÞ¸Ä³É¹¦¡£esc+0ÍË³ösmitºó£¬ÔÙ´ÎÔö¼Ó£¬ITPUB¸öÈË¿Õ¼äTS \EHY{.\Z
+# chfs -a size=100G /oradata02
+
+Swap:
+lsps -a
+lsvg rootvg -> 
+chps ¨Cs 30 hd6
+shutdown -Fr
+1. lsvg rootvg ÖªµÀrootvgµÄPP´óÐ¡£¬Èç256M
+2. lsps -a  ÕÒµ½ ps µÄÉè±¸ÃûÈç hd6
+3. extendlv hd6 4
+   4*256M =1G
+4. lsps -a ¼ì²éÒ»ÏÂ£¬ÏÖÔÚÓ¦¸ÃÔö¼ÓÁË1GµÄswap
+5. shutdown -Fr ÖØÆôÉúÐ§
+
+
+
+./manageprofiles.sh -delete -profileName profile_name
+./manageprofiles.sh -validateAndUpdateRegistry 
+./manageprofiles.sh -augment -profileName Custom03 -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/wxdcg_augment/managed
+/opt/IBM/WebSphere/AppServer/profiles/Custom03/bin/syncNode.sh localhost -conntype soap -username admin -password zhu88jie
+
+ITM: uninstall.sh REMVE EVERYTHING
+
+aix: jar -xvf *.zip
+
+userdel -r
+
+/opt/IBM/SitForwarder/omnibus/checkSUFStatus.sh
+
+sitconfuser.sh add serverid=tiv87.cn.ibm.com userid=administrator password=zhu88jie pathc=/opt/IBM/SitForwarder/etc type=OMNIBUS
+./sitconf.sh update fileName=situpdate.conf logLevel=med pathc=/opt/IBM/SitForwarder/etc type=OMNIBUS
+/opt/IBM/SitForwarder/bin/startSUF.sh|stopSUF.sh
+
+TEC:
+wlookup -ar RIM
+wsetrimpw tec itmitm zhu88jie
+wrimtest -l tec
+%SystemRoot%\system32\drivers\etc\Tivoli\setup_env.cmd
+DB2 9.5 is ok, but 9.7 not
+DB2 admin: DB2
+administrator, tmerervd are in group: administrators,DB2ADMNS, Tivoli_Admin_Privileges
+Right click on Root_tiv90_Region(In Administrators): Edit TMR Roles, Edit Resource Roles, Edit Logins
+Right click on tiv90-region: Managed Resources..
+C:\Tivoli\bin\w32-ix86\bin\tec_console.cmd   Administrator
+import class into Rules Base: should to be the end of it.
+
+itmw081.tivlab.raleigh.ibm.com
+
+VIO:  oem_setup_env
+
+½âÑ¹Ëõ.tar.gz:
+gzip -dc * |tar -xvf- 
+
+0653-447 Requested a write of 4096 bytes, but wrote only 3584.
+What to do? On a console, type :
+#ulimit -f unlimited
+#ulimit -d unlimited
+
+
+TMF env setup:
+%SystemRoot%\system32\drivers\etc\Tivoli\setup_env
+
+ftp://ftp.software.ibm.com/software/tivoli_support/patches/
+
+ITM 5.1.2  : track 4653
+
+MS:  http://tivp064.cn.ibm.com:9080/am/home 
+WESB: https://tivvm409:9043/ibm/console  http://tivvm409:9060/ibm/console
+testware: http://tivvm409:9082/ITCAM/Demo
+
+sh db2install.sh db2inst1 db2inst1 /temp/db2 admin 9.5 octigate  (create MS DB manually)
+
+82782843 
+
+tivx57:
+itcam / mz0neren
+
+KVM agent:
+KVM Hypervisor ID:  qemu-kvm
+
+
+r002.idp014.22757.u00626  9.115.72.201   administrator / passw0rd   for taddm gateway and sametime server
+
+r002.idp017.41882.u00626  9.115.72.195  root/ passw0rd SLES 11 X64  for KVM agent
+
+TADDM gateway:
+hansj_w2k3_32bit on tivx020.
+
+ITM Server must install agent support, then agent workspaces can be showed.
+
+top mq:
+1. dspmq
+2. endmqm QM1
+3. endmqlsr -m QM1
+4. ps -ef |grep mq
+ÔÚMQ Coordination manager,±ØÐëÐÂ½¨Ò»¸öÓÃ»§root£¬²¢ÇÒMQºÍfteÓÃËüÀ´Æô¶¯¡£
+
+
+CandleManage  Í¼ÐÎ»¯½çÃæÈ¥ÅäÖÃITCAM and ITM agent
+
+ITM SYStem agent on Linux:
+./itmcmd config -A lz   (°²×°ºóÅäÖÃlinux agent)
+./itmcmd agent start all
+
+OS image:
+\\tivhh001\public\image\os_image 
+test/Jiaba0yu 
+
+
+MQ Server install on Windows:
+1. install C:\software\CZJ3SML_Windows\Prereqs\IES;
+On Linux:
+1.mqlicense.sh
+2.rpm -ivh *.rpm
+3.rpm -Uvh *.rpm to install MQ FP.
+Add root to mqm group on linux:
+QM Cluster:
+server1: tiv87
+TVT2029:/opt/mqm/bin # ./crtmqm -q QM1
+TVT2029:/opt/mqm/bin # strmqm QM1
+TVT2029:/opt/mqm/bin # runmqsc QM1
+DEFINE CHANNEL(SYSTEM.ADMIN.SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP)
+DEFINE LISTENER(LISTENER.TCP) TRPTYPE(TCP) PORT(1414)
+START LISTENER(LISTENER.TCP)
+ALTER QMGR REPOS(CLUSTER1)
+DEFINE CHANNEL(TO.tiv87) CHLTYPE(CLUSRCVR) TRPTYPE(TCP) CONNAME('tiv87(1414)') CLUSTER(CLUSTER1)
+DEFINE CHANNEL(TO.TIVVM411) CHLTYPE(CLUSSDR) TRPTYPE(TCP) CONNAME('TIVVM411(1414)') CLUSTER(CLUSTER1)
+dis clusqmgr(*)
+dis chstatus(*)
+end
+Server2: tivvm411
+crtmqm -q QM2
+strmqm QM2
+runmqsc QM2
+DEFINE CHANNEL(SYSTEM.ADMIN.SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP)
+DEFINE LISTENER(LISTENER.TCP) TRPTYPE(TCP) PORT(1414)
+START LISTENER(LISTENER.TCP)
+ALTER QMGR REPOS(CLUSTER1)
+DEFINE CHANNEL(TO.TIVVM411) CHLTYPE(CLUSRCVR) TRPTYPE(TCP) CONNAME('TIVVM411(1414)') CLUSTER(CLUSTER1)
+DEFINE CHANNEL(TO.tiv87) CHLTYPE(CLUSSDR) TRPTYPE(TCP) CONNAME('tiv87(1414)') CLUSTER(CLUSTER1)
+dis clusqmgr(*)
+dis chstatus(*)
+end
+
+TVT2029:/opt/mqm/bin #
+
+runmqsc QM2 < QM2.mqsc (QM2 is coordination QM)
+runmqsc QM1 < AGENT1_create.mqsc  (Qm1 is command QM)
+./fteSetupCoordination -coordinationQMgr QM2 -coordinationQMgrHost tivvm411.cn.ibm.com -coordinationQMgrPort 1414
+./fteSetupCommands -connectionQMgr QM1 -connectionQMgrHost tvt2029.tivlab.raleigh.ibm.com -connectionQMgrPort 1414
+
+On Coordination QUEUE Manager:
+new a Subscriptions:  
+  Topic name: STSTEM.FTE   Topic string: /Log/AGNET2# Destination class: Managed
+
+
+Db2:
+db2 catlog tcpip node nodename remote 9.26.4.250 server50001
+db2 catalog db taddm at node test133
+db2 connect to dbname1 user username using password
+db2 list db directory
+db2licm -l
+db2licm -a licenseÎÄ¼þ
+
+
+Track 4684:
+Hostname: klingon.torolab.ibm.com root / gr3y_parr0t
+          tivs06.cn.ibm.com  root / zhu88jie
+          coralpib131.torolab.ibm.com demoin1 / zhu88jie
+vnc:
+# vi xsetup
+comment all and add:
+  exec /etc/X11/xinit/xinitrc  (For Linux)
+/usr/dt/bin/dtsession &   (For AIX)
+
+MQ7 infocenter:
+http://publib.boulder.ibm.com/infocenter/wmqfte/v7r0/index.jsp?topic=/com.ibm.wmqfte.doc/configuring_agents_first.htm
+MQ FTE 7:
+http://publib.boulder.ibm.com/infocenter/wmqfte/v7r0/index.jsp?topic=/com.ibm.wmqfte.doc/configuring_agents_first.htm
+
+MQ:
+useradd -g mqm -d /var/mqm -m mqm
+dltmqlnk / 
+crtmqm -q tvt2029.queue.manager / channel1
+
+
+start/stop sametime server from domino server console:
+start: load staddin
+stop:  tell staddin quit
+
+Sametime 852 infocenter:
+https://idoc2.swg.usma.ibm.com/sametime/index.jsp?topic=/com.ibm.help.sametime.v852.doc/welcome_852.html
+
+TADDM¿Õ¼äÎÊÌâ£º
+Primary Storage Server's DB2inst1 need at least 2GB
+to use anchor, the linux anchor server's root's FS need at least 500MB free disk.
+
+\IBM\WebSphere\AppServer\profiles\AppSrv01\appdescriptors
+ESX Server:
+tivx019,tivx022 CT/zhu88jie, root/Zhu88jie
+GateWay: tiv155 administrator/zhu88jie
+ESX/VC:      tivx76|77:root/Zhu88jie/tivvm308:administrator/zhu88jie  (¶ÔVC½¨2¸öAL£º VCS + Computer System( Windows))
+·¢ÏÖwindowsµÄÊ±ºò£¬Ò»¶¨²»Òª½«gateway server¼Óµ½scopeÀïÃæ,Í¬Ê±Ò²Ò»¶¨²»Òª°ÑÕë¶ÔgatewayµÄAccess List¹ØÁªµ½¾ßÌåµÄScope¡£
+Anchor·½Ê½»áLinux serverÉÏÃæ°²×°jave£¬ºÃ¼¸°ÙM£¬Í¦ÂýµÄ¡£
+
+\\wplcbld.cn.ibm.com
+cdl_cc\linyuebj Lamyoyo1 
+
+https://lli.ibm.com/meeting/DAC?OpenForm
+Login with your intranet ID and password, then select "host a meeting", 
+
+TADDM Console:
+http://tvt4148.tivlab.raleigh.ibm.com:9430/   administrator/collation
+TADDM GateWay: 9.123.101.57/tiv155, archor no need set(use default)
+9.123.101.57 administrator/zhu88jie tiv155 
+
+http://w3-103.ibm.com/software/xl/download/ticket.do
+
+ÍâÍø£º
+itmw081.tivlab.raleigh.ibm.com
+administrator/g0vmware
+
+http://www-933.ibm.com/support/fixcentral/
+ftp://ftp.software.ibm.com/software/tivoli_support/patches/patches_3.9.0/
+
+http://publib.boulder.ibm.com/infocenter/db2luw/v9/index.jsp
+
+root / t1voli
+vnc: zhu88jie
+
+https://ctpm:9443/ctpm22/login.jsp
+hanshj@cn.ibm.com/tivoli
+
+\\tivx69.cn.ibm.com
+other \ zhu99jie
+
+Win2008 UACÅäÖÃ£º
+http://technet.microsoft.com/en-us/library/cc709691%28WS.10%29.aspx#BKMK_S3
+
+http://www.ibm.com/developerworks/wikis/display/tivolidoccentral/Home
+http://publib.boulder.ibm.com/infocenter/tivihelp/v46r1/index.jsp?topic=/com.ibm.taddm.doc_721/welcome_page/welcome.html
+http://faces.tap.ibm.com/
+
+http://my.4399.com/invite.php?u=71421752&app=100152&c=6be010c273687a96
+
+ctteam / Zhu88jie
+
+work claim:
+http://w3.ibm.com/services/portal/enterprise
+M.00736  cCoC  GB0020  General Billable  SCRG
+
+http://w3-01.ibm.com/download/standardsoftware/ap.html
+
+passw0rd
+Web Server port (DEFAULT: 9430):
+Web Server SSL port (DEFAULT: 9431):
+JNDI port (DEFAULT: 9432):
+RMI port (DEFAULT: 9433):
+Topology Manager communication port (DEFAULT: 5636):
+Topology Builder port number (DEFAULT: 5637):
+RMID port (DEFAULT: 1098):
+GUI-Server communication port (DEFAULT: 9435):
+GUI-Server SSL communication port (DEFAULT: 9434)
+
+3.ÔÚWindows ÏÂÆô¶¯Ô¶³ÌLinux µÄKDEÍ¼ÐÎ½çÃæ
+¡¡¡¡(1) Æô¶¯Hummingbird Exceed£¬È»ºó½«Exceed ´°¿Ú±ä³É×îÐ¡»¯£»
+¡¡¡¡(2) ´ò¿ªWindows ÏÂµÄssh£¬µÇÂ¼µ½Ô¶³ÌÖ÷»úrhostname£»
+¡¡¡¡(3) µÇÂ¼³É¹¦ºó£¬ÊäÈë£º
+¡¡¡¡# export DISPLAY= =±¾»úµÄIPµØÖ·:0.0
+¡¡¡¡# startkde
+
+AIX mount tivx69:
+mount -t iso9660 /home/software/RHEL6.2-20111117.0-Server-x86_64-DVD1.iso /media -o loop
+mount -t smbfs -o codepage=cp936,username=ÓÃ»§Ãû,password=ÃÜÂë , -l //ipµØÖ·/¹²ÏíÎÄµµ¼ÐÃû ¹ÒÔØµã
+# nfso -o nfs_use_reserved_ports=1 
+# mount tivx69:/share/build/public /tivx69
+# mount tivhh001.cn.ibm.com:/u1/public /tivhh001
+Solaris mount:
+mount -F nfs -o vers=3 192.168.0.1:/opt /mnt/nfs
+
+
+TADDM ÖØÐÂÅäÖÃ£¨db2inst1ÃÜÂë¸ü¸Äºó£©£º
+If the password for the RDBMS server has changed, you can update the 
+password on the TADDM server by editing the $COLLATION_HOME/etc/
+collation.properties file.  For details, see below :
+Database settings
+The database passwords for both the database user and archive user are stored in
+the $COLLATION_HOME/etc/collation.properties file.
+Use the following properties to change the passwords on the TADDM server:
+com.collation.db.password=password
+com.collation.db.archive.password=password
+
+To encrypt passwords in the collation.properties file, you must first edit the
+database user, or archive the user password using clear text, or both. Then, stop
+the TADDM server, and run the encryptprops.sh file or encryptprops.bin file
+(located in the $COLLATION_HOME/bin directory). This script encrypts the passwords.
+Restart the TADDM server, and the passwords are encrypted in the
+collation.properties file.
+
+demoin1@coralpib133:/home/demoin1> db2start
+ADM12026W  The DB2 server has detected that a valid license for the product "DB2 Enterprise Server Edition" has not been registered.
+
+06/13/2011 00:28:43     0   0   SQL6037N  START or STOP DATABASE MANAGER timeout value was reached.
+06/13/2011 00:28:44     1   0   SQL6037N  START or STOP DATABASE MANAGER timeout value was reached.
+SQL1032N  No start database manager command was issued.  SQLSTATE=57019
+demoin1@coralpib133:/home/demoin1> db2licm -l
+Product name:                     "DB2 Enterprise Server Edition"
+License type:                     "License not registered"
+Expiry date:                      "License not registered"
+Product identifier:               "db2ese"
+Version information:              "9.7"
+
+ZAQ12wsx
+
+s
+\\tive06\share\SWAT\cygwin_install 
+root/zhu88jie 
+
+
+hengjie_han@hotmail.com / jerys0n_1
+
+rpm -Uvh alsa-lib-1.0.21-3.el6.i686.rpm atk-1.28.0-2.el6.i686.rpm audit-libs-2.0.4-1.el6.i686.rpm avahi-libs-0.6.25-8.el6.i686.rpm cairo-1.8.8-3.1.el6.i686.rpm cups-libs-1.4.2-35.el6.i686.rpm dbus-glib-0.86-5.el6.i686.rpm dbus-libs-1.2.24-3.el6.i686.rpm expat-2.0.1-9.1.el6.i686.rpm fontconfig-2.8.0-3.el6.i686.rpm freetype-2.3.11-5.el6.i686.rpm gamin-0.1.10-9.el6.i686.rpm glib2-2.22.5-5.el6.i686.rpm glibc-2.12-1.7.el6.i686.rpm glibc-common-2.12-1.7.el6.i686.rpm gnutls-2.8.5-4.el6.i686.rpm gstreamer-0.10.29-1.el6.i686.rpm gtk2-2.18.9-4.el6.i686.rpm gtk2-engines-2.18.4-5.el6.i686.rpm jasper-libs-1.900.1-15.el6.i686.rpm keyutils-libs-1.4-1.el6.i686.rpm krb5-libs-1.8.2-3.el6.i686.rpm libasyncns-0.8-1.1.el6.i686.rpm libcanberra-0.22-1.el6.i686.rpm libcanberra-gtk2-0.22-1.el6.i686.rpm libcom_err-1.41.12-3.el6.i686.rpm libgcc-4.4.4-13.el6.i686.rpm libgcrypt-1.4.5-3.el6.i686.rpm libgpg-error-1.7-3.el6.i686.rpm libICE-1.0.6-1.el6.i686.rpm libjpeg-6b-46.el6.i686.rpm libogg-1.1.4-2.1.el6.i686.rpm libpng-1.2.44-1.el6.i686.rpm libselinux-2.0.94-2.el6.i686.rpm libSM-1.1.0-7.1.el6.i686.rpm libsndfile-1.0.20-3.el6.i686.rpm libstdc++-4.4.4-13.el6.i686.rpm libtasn1-2.3-3.el6.i686.rpm libtdb-1.2.1-2.el6.i686.rpm libthai-0.1.12-3.el6.i686.rpm libtiff-3.9.4-1.el6.i686.rpm libtool-ltdl-2.2.6-15.5.el6.i686.rpm libuuid-2.17.2-6.el6.i686.rpm libvorbis-1.2.3-4.el6.i686.rpm libX11-1.3-2.el6.i686.rpm libxcb-1.5-1.el6.i686.rpm libXau-1.0.5-1.el6.i686.rpm libXcomposite-0.4.1-2.el6.i686.rpm libXcursor-1.1.10-2.el6.i686.rpm libXdamage-1.1.2-1.el6.i686.rpm libXext-1.1-3.el6.i686.rpm libXfixes-4.0.4-1.el6.i686.rpm libXft-2.1.13-4.1.el6.i686.rpm libXi-1.3-3.el6.i686.rpm libXinerama-1.1-1.el6.i686.rpm libxml2-2.7.6-1.el6.i686.rpm libXrandr-1.3.0-4.el6.i686.rpm libXrender-0.9.5-1.el6.i686.rpm libXtst-1.0.99.2-3.el6.i686.rpm ncurses-libs-5.7-3.20090208.el6.i686.rpm nss-softokn-freebl-3.12.7-1.1.el6.i686.rpm PackageKit-gtk-module-0.5.8-13.el6.i686.rpm pango-1.28.1-3.el6.i686.rpm pixman-0.16.6-1.el6.i686.rpm pulseaudio-libs-0.9.21-13.el6.i686.rpm readline-6.0-3.el6.i686.rpm redhat-lsb-graphics-4.0-2.1.el6.i686.rpm sqlite-3.6.20-1.el6.i686.rpm tcp_wrappers-libs-7.6-56.3.el6.i686.rpm zlib-1.2.3-25.el6.i686.rpm --force
+
+
+1. Mount the DVD to the system. Insert the DVD into the DVD drive.
+
+2. Select open a terminal window as a root.
+
+3. Execute the commands:
+
+[root@localhost]# mkdir /mnt/cdrom
+[root@localhost]# mount -o ro /dev/cdrom /mnt/cdrom
+
+4. Create the text file server.repo in the /etc/yum.repos.d directory.
+
+NOTE: To use gedit, execute the command:
+[root@localhost]# gedit /etc/yum.repos.d/server.repo
+
+Add the following text to the file:
+
+[server]
+name=server
+baseurl=file:///mnt/cdrom/Workstation
+enabled=1
+
+where baseurl depends on the mounting point and the RHEL distribution.
+
+In the example, the mounting point is cdrom and the RHEL distribution is Workstation but could be sever.
+
+5. Execute the command:
+
+[root@localhost]# yum clean all
+
+6. Execute the command to import related public keys:
+
+[root@localhost]# rpm --import /mnt/cdrom/*GPG*
+
+7. Execute the commands to install the required libraries:
+
+[root@localhost]# yum install gtk2.i686
+[root@localhost]# yum install libXtst.i686
+
+During the install you might receive prompts similar to the example. Answer with 'y'.
+
+Example:
+Total download size: 15 M
+Installed size: 47 M
+Is this ok [y/N]: y
+
+NOTE: The package name extension (.i686) might change in the command depending on the hardware platform that you use. The table lists valid values for the package name extension.
+
+
+   ×î½üÔÚÑÐ¾¿ÓÃphp ldapÁ¬½Óactive directory(Ö÷ÒªÊÇÊ¹ÓÃadLDAPÀà)£¬ÔÚÊ¹ÓÃfolder_list()·½·¨µÝ¹éOUµÄÊ±ºò·¢ÏÖ±¨´í£¬¼´ldap_search(): Partial search results returned: Sizelimit exceeded¡ª¡ªÖ»ÄÜ²éÑ¯1000¸ö¶ÔÏó£¬googleÁËÒ»ÏÂ£¬·¢ÏÖad ldapÄ¬ÈÏµÄ²ßÂÔÊÇÓÐÏÞÖÆµÄ£¨¹À¼ÆÊÇ¿¼ÂÇµ½ÐÔÄÜµÄÒòËØ£©£¬½«Ä¬ÈÏµÄMaxPageSize²ÎÊýÐÞ¸ÄÎªÒ»¸ö½Ï´óµÄÖµ¼´¿É£¨ÀýÈç3000£¬ÎÒµÄ²âÊÔ»·¾³Àï2000¾Í¹»ÓÃÁË£©£¬ÐÞ¸Ä·½·¨ÈçÏÂ¡£
+Viewing current policy settings
+
+    At the Ntdsutil.exe command prompt, type LDAP policies, and then press ENTER.
+    At the LDAP policy command prompt, type connections, and then press ENTER.
+    At the server connection command prompt, type connect to server <DNS name of server>, and then press ENTER. You want to connect to the server that your are currently working with.
+    At the server connection command prompt, type q, and then press ENTER to return to the previous menu.
+    At the LDAP policy command prompt, type Show Values, and then press ENTER.
+    A display of the policies as they exist appears.
+
+Modifying policy settings
+
+    At the Ntdsutil.exe command prompt, type LDAP policies, and then press ENTER.
+    At the LDAP policy command prompt, type Set setting to <variable>, and then press ENTER. For example, type Set MaxPoolThreads to 8.This setting changes if you add another processor to your server.
+    You can use the Show Values command to verify your changes.To save the changes, use Commit Changes.
+    When you finish, type q, and then press ENTER.
+    To quit Ntdsutil.exe, at the command prompt, type q, and then press ENTER.
+
+Note This procedure only shows the Default Domain Policy settings. If you apply your own policy setting, you cannot see it..
+Ô­ÎÄµØÖ·http://support.microsoft.com/kb/315071/en-us
