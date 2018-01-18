@@ -1,0 +1,462 @@
+ssh-keygen -t rsa
+ssh-copy-id user@host
+
+helm upgrade --install people-groups people-groups-0.1.0-20180102-221329.tgz --namespace connections
+helm del --purge shjiehanme
+kubectl describe svc kubernetes-dashboard --namespace kube-system
+
+on icekubes:
+1. Download mongo-x509-activation.sh to $HOME
+2. chmod +x $HOME/mongo-x509-activation.sh
+3. mkdir /opt/deployCfC/jq/bin
+4. download jq to /opt/deployCfC/jq/bin
+5. chmod +x /opt/deployCfC/jq/bin/jq
+6. helm list -a | grep -i mongodb
+lcuser@icekubes:~/.helm/repository/local$ helm list -a | grep -i mongo
+mongodb                         24              Tue Jan  9 17:37:21 2018        DEPLOYED        mongodb-0.1.0-3.4.4-r0-20180109-173132          default 
+7. lcuser@icekubes:~/.helm/repository/local$ ls -la ~/.helm/repository/local/mongodb-0.1.0-3.4.4-r0-20180109-173132*
+-rw-r--r-- 1 lcuser lcuser 42325 Jan  9 17:37 /home/lcuser/.helm/repository/local/mongodb-0.1.0-3.4.4-r0-20180109-173132.tgz
+8. helm del --purge mongodb
+9.$ $HOME/mongo-x509-activation.sh --namespace=connections --x509Enabled=true --chartName=mongodb --chartPath=/home/lcuser/.helm/repository/local/mongodb-0.1.0-3.4.4-r0-20180109-173132.tgz
+
+
+ linux下查看最消耗CPU、内存的进程
+
+1.CPU占用最多的前10个进程： 
+ps auxw|head -1;ps auxw|sort -rn -k3|head -10 
+2.内存消耗最多的前10个进程 
+ps auxw|head -1;ps auxw|sort -rn -k4|head -10 
+3.虚拟内存使用最多的前10个进程 
+
+ps auxw|head -1;ps auxw|sort -rn -k5|head -10
+
+4.也可以试试
+
+ps auxw --sort=rss
+ps auxw --sort=%cpu
+
+居然之家积分兑换
+http://www.juran.com.cn/
+6660728474 / jerys00n
+
+
+kubernetes安装：
+https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W28b8df99093e_468e_880f_000d19d33b5c/page/Deploy%20a%20local%20Kubernetes%20environment%20for%20development%20and%20testing%20purpose
+swapoff -a
+Your Kubernetes master has initialized successfully!
+kubectl cluster-info
+
+To start using your cluster, you need to run (as a regular user):
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  http://kubernetes.io/docs/admin/addons/
+
+You can now join any number of machines by running the following on each node
+as root:
+
+kubeadm join --token 76ffcf.81cbe2c194037489 9.98.171.222:6443 --discovery-token-ca-cert-hash sha256:5bd758620dae0c400880874019957c767b4315f97187a646d2aebe4e5359959a
+
+
+set -ex: -e 某行失败就退出脚本执行，-x 打印出所执行的脚本 //通常放脚本第二行
+
+docker run -t -i training/sinatra /bin/bash  //可以进入container
+docker ps -a/-l
+docker port/inspect
+docker build -t ubuntu:mytest .
+docker run -d -p 8888:8888 -v /test:/test ubuntu:mytest
+
+on ringjenk(jenkins启动命令):
+/usr/local/tomcat/bin/startup.sh
+
+https://help.github.com/enterprise/2.10/user/articles/connecting-to-github-with-ssh/
+git clone git@github.ibm.com:connections-incubator/shjiehan-a
+Git 常用命令
+1.创建一个新的repository：
+先在github上创建并写好相关名字，描述。
+$cd ~/coredump        
+$git init                     //初始化
+$git add .                   //把所有文件加入到索引（不想把所有文件加入，可以用gitignore或add 具体文件)
+$git commit               //提交到本地仓库，然后会填写更新日志( -m “更新日志”也可)
+$git remote add origin https://github.com/JGCheng/coredump.git       //增加到remote
+$git push origin master    //push到github上
+2.更新项目（新加了文件）：
+$cd ~/coredump
+$git add .                  //这样可以自动判断新加了哪些文件，或者手动加入文件名字
+$git commit  -m 'my first commit'           //提交到本地仓库
+$git push origin master    //不是新创建的，不用再add 到remote上了
+3.更新项目（没新加文件，只有删除或者修改文件）：
+$cd ~/coredump
+$git commit -a          //记录删除或修改了哪些文件
+$git push origin master  //提交到github
+4.忽略一些文件，比如*.o等:
+$cd ~/coredump
+$vim .gitignore     //把文件类型加入到.gitignore中，保存
+然后就可以git add . 能自动过滤这种文件
+5.clone代码到本地：
+$git clone https://github.com/JGCheng/coredump.git
+假如本地已经存在了代码，而仓库里有更新，把更改的合并到本地的项目：
+$git fetch origin    //获取远程更新
+$git merge origin/master //把更新的内容合并到本地分支
+6.撤销
+$git reset
+7.删除
+$git rm  * // 不是用rm 
+
+java -jar jenkins.war
+
+error when running: dpkg --configure -a
+Errors were encountered while processing:
+ linux-generic
+resolve:apt-get -f install  //nothing behind install
+
+A. How to install go 1.9.2 on ubuntu 16.04
+
+on ubuntu 16.04:
+# apt install golang-go
+# apt-get install gccgo-5
+# apt install git
+# apt-get install gcc
+# git clone https://go.googlesource.com/go
+# cd go
+# git checkout go1.9.2
+# cd src/
+# export GOROOT_BOOTSTRAP=/usr/lib/go-1.6
+# ./all.bash
+# vi /etc/profile
+  export PATH=/root/go/bin:$PATH
+# . /etc/profile
+# go version
+# apt-get install bzr, rpm, npm
+
+
+B. Ubuntu 16.04: xz installation:
+1. download xz-5.2.3.tar.gz on https://sourceforge.net/projects/lzmautils/files/
+2. 
+1)先解压  tar -zxvf xz-5.2.3.tar.gz
+2) cd xz-5.2.3
+3) ./configure
+4) make
+5) make install
+error: xz: /lib/x86_64-linux-gnu/liblzma.so.5: version `XZ_5.2' not found (required by xz)
+resolve: 
+Try installing the packages manually.
+https://askubuntu.com/questions/868478/unmet-dependencies-with-apt-get-standard-solutions-not-working
+a. Open up https://packages.ubuntu.com/ in your web browser.
+b. Scroll down to the Search package directories area.
+c. Select your version of Ubuntu from the Distribution drop down (In this case it's trusty).
+d. Type in the package name and click search (In this case it's libcwidget3)
+e. Click on the Exact Hit (In this case it's Package libcwidget3)
+f. Select your computers architecture in the table at the bottom of your page. (amd64 for 64 bit computers, i386 is for 32 bit computers
+g. Select one of the links on the page. It's probably a good idea to select the one for your country but it doesn't matter.
+h. Open up a terminal and navigate to the directory that you downloaded the package to.
+i. Run sudo dpkg -i file.deb, where file.deb is the file that you just downloaded.
+
+C. Ubuntu 16.04 下安装 PostgreSQL 和 phpPgAdmin:
+http://www.linuxidc.com/Linux/2016-08/134260.htm
+第一步：安装 PostgreSQL, phpPgAdmin 和 Apache2
+sudo apt-get -y install postgresql postgresql-contrib phppgadmin
+第二步：配置 PostgreSQL 用户
+PostgreSQL使用的用户认证和授权类似UNIX权限角色。默认情况下，PostgreSQL创建了一个名为“Postgres”基本身份验证新用户。要使用PostgreSQL，您需要登录到“Postgres”账户，你可以通过键入：
+$ sudo su   //切换到root
+$ su - postgres //切换到postgres
+现在，您可以用命令访问PostgreSQL提示：
+postgres$ psql
+postgres=# \password postgres
+Enter New password: ****
+Enter it again: ****
+postgres=# \q
+postgres$exit
+# vi /etc/postgresql/9.5/main/postgresql.conf
+listen_addresses = '*' 
+
+# 
+第三步：配置Apache2
+cd /etc/apache2/conf-available/
+vi phppgadmin.conf
+注释掉#Require local，添加Allow From all，这样才可以从你的浏览器访问。
+
+第四步：配置 phpPgAdmin
+编辑文件 /etc/phppgadmin/config.inc.php ：
+cd /etc/phppgadmin/
+vi config.inc.php
+找到 $conf[‘extra_login_security’] = true; 修改为false。
+你就可以使用 postgres 用户登录 phpPgAdmin。
+
+第五步：重启 PostgreSQL 和 Apache2
+systemctl restart postgresql
+systemctl restart apache2
+
+第六步：测试登录
+浏览器输入：http://9.70.227.195/phppgadmin/
+
+D. Clair安装：
+
+Source： https://github.com/coreos/clair/blob/master/Documentation/running-clair.md
+
+To build Clair, you need to latest stable version of Go and a working Go environment. In addition, Clair requires some additional binaries be installed on the system $PATH as runtime dependencies:
+
+    git
+    bzr
+    rpm
+    xz
+
+# export GOPATH=/root/gopath
+# go get github.com/coreos/clair
+# go install github.com/coreos/clair/cmd/clair
+# $EDITOR config.yaml # Add the URI for your postgres database
+# cp $GOPATH/src/github.com/coreos/clair/config.yaml.sample $GOPATH/src/github.com/coreos/clair/config.yaml
+# vi $GOPATH/src/github.com/coreos/clair/config.yaml
+   source: host=localhost port=5432 user=postgres password=passw0rd sslmode=disable statement_timeout=60000
+# $GOPATH/bin/clair -config=config.yaml
+
+**使用 Docker 官方源安装**
+
+1. # curl -sSL https://get.docker.com/ | sh
+
+2. 验证
+# docker info
+# docker version
+
+3. docker 命令需要使用sudo 权限来运行。每次都输入sudo很不方便。讲当前用户加入 docker 用户组就不用这么麻烦了。
+# usermod -aG docker ${USER}
+
+4. 重启 docker 守护进程
+# service docker restart
+
+5.  验证
+# docker run hello-world
+
+6. 拉取一个 ubuntu 镜像试试
+# docker pull ubuntu
+
+npm install -g hawkeye-scanner
+clairctll --log-level debug analyze
+
+** Maven:** Maven 是一个项目管理和构建自动化工具
+http://blog.csdn.net/anhuidelinger/article/details/51114483
+# mvn -v
+#mvn archetype:generate -DgroupId=com.ibm.helloworld -DartifactId=helloworld -Dpackage=com.ibm.helloworld -Dversion=1.0-SNAPSHOT
+# cd helloworld
+# mvn package    //build
+#java -cp target/helloworld-1.0-SNAPSHOT.jar com.ibm.helloworld.App
+# mvn install (cd helloworld)  把我们的 helloworld 项目安装到本地库
+
+**安装最新稳定版的nodejs
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo ln -sf /usr/local/n/versions/node/<VERSION>/bin/node /usr/bin/nodejs
+
+curl -k -u shjiehan@cn.ibm.com:jerys22n https://artifactory.swg.usma.ibm.com/artifactory/api/npm/auth >~/.npmrc
+echo registry=\"https://artifactory.swg.usma.ibm.com/artifactory/api/npm/v-ess-npm-dev\"  >> ~/.npmrc
+git clone git@github.ibm.com:xjjxie/appcatalog-web-client.git
+git@github.ibm.com:connections-incubator/shjiehanqs.git
+
+https://nodejs.org/en/download/
+Download Source code:
+tar zxvf node-8.9.1.tar.gz
+cd node-8.9.1
+./configure --prefix=/usr/local/node8.9.1
+make
+make instal
+#set for nodejs
+export NODE_HOME=/usr/local/node8.9.1
+export PATH=$NODE_HOME/bin:$PATH
+
+安装npm： apt-get install npm
+升级到最新的npm：  npm install npm -g
+npm install -g express 用global下载安装
+npm install express          # 本地安装
+npm install express -g   # 全局安装
+
+0419036f99b5bc2a79ada62f94f8e2503bd7066b
+
+
+root@mykubem:/etc/kubernetes/pki# vi front-proxy-client-csr.json
+root@mykubem:/etc/kubernetes/pki# cfssl gencert \
+> -ca=front-proxy-ca.pem \
+> -ca-key=front-proxy-ca-key.pem \
+> -config=ca-config.json \
+> -profile=kubernetes \
+> front-proxy-client-csr.json | cfssljson -bare front-proxy-client
+2017/12/04 19:22:47 [INFO] generate received request
+2017/12/04 19:22:47 [INFO] received CSR
+2017/12/04 19:22:47 [INFO] generating key: rsa-2048
+2017/12/04 19:22:48 [INFO] encoded CSR
+2017/12/04 19:22:48 [INFO] signed certificate with serial number 502811136016344235024594876268036561504531947700
+2017/12/04 19:22:48 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for
+websites. For more information see the Baseline Requirements for the Issuance and Management
+of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);
+specifically, section 10.2.3 ("Information Requirements").
+
+kubeadm join --token 0039e3.308ca7cf45b1107b 9.98.171.222:6443 --discovery-token-ca-cert-hash sha256:29fd445618619ac8e4712d077b1f39a43da09825bf9cd06170d5434c12c8675e
+
+
+systemctl status kubelet
+curl -k https://9.98.171.222:6443
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat <<EOF > /etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+apt-get update
+apt-get install -y docker.io
+apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+mkdir -p $HOME/.kube
+cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+chown $(id -u):$(id -g) $HOME/.kube/config
+
+kubectl apply -f https://docs.projectcalico.org/v2.6/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml
+kubectl get pods --all-namespaces
+kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+kubectl describe svc kubernetes-dashboard --namespace kube-system
+kubectl -n kube-system edit service kubernetes-dashboard
+kubectl -n kube-system get service kubernetes-dashboard
+kubectl proxy --address="0.0.0.0" --accept-hosts="^*$" &
+
+Host github.ibm.com
+    HostName github.ibm.com
+    IdentityFile ~/.ssh/id_rsa_empty
+
+secret text:  f183426da5f6221d0ddf10252a6baefe59954de7
+kubectl create clusterrolebinding login-on-dashboard-with-cluster-admin --clusterrole=cluster-admin --user=kubernetes-dashboard
+kubectl create clusterrolebinding login-on-dashboard-with-cluster-admin --clusterrole=cluster-admin --user=system:serviceaccount:kube-system:kubernetes-dashboard
+ssh-keygen -t rsa -b 4096 -C "shjiehan@cn.ibm.com"
+system:serviceaccount:kube-system:kubernetes-dashboard
+kubectl get pods -o wide
+kubectl create clusterrolebinding permissive-binding --clusterrole=cluster-admin --user=admin --user=kubelet --group=system:serviceaccounts
+
+https://9.98.171.222:31076/#!/cluster?namespace=default
+
+
+Error:
+root@kmaster:~/shjiehanc/deployment/helm# helm install --dry-run --debug shjiehanc
+[debug] Created tunnel using local port: '46455'
+
+[debug] SERVER: "127.0.0.1:46455"
+
+[debug] Original chart version: ""
+[debug] CHART PATH: /root/shjiehanc/deployment/helm/shjiehanc
+Resolved:  https://stackoverflow.com/questions/43499971/helm-error-no-available-release-name-found
+  kubectl create clusterrolebinding permissive-binding --clusterrole=cluster-admin --user=admin --user=kubelet --group=system:serviceaccounts
+
+Error: no available release name found
+
+
+https://artifactory.swg.usma.ibm.com/artifactory/connections-docker/shjiehanlb/
+
+usermod -aG docker jenkins
+JAVA_HOME=/usr/local/jdk1.8.0_151
+CLASSPATH=.:$JAVA_HOME/lib/tools.jar
+PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME CLASSPATH PATH
+
+
+  <role rolename="admin-gui"></role>
+  <role rolename="admin-script"></role>
+  <role rolename="manager-gui"></role>
+  <role rolename="manager-script"></role>
+  <role rolename="manager-jmx"></role>
+  <role rolename="manager-status"></role>
+  <user username="admin" password="passw0rd" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-script,admin-gui"/>
+
+
+tasker.swg.usma.ibm.com
+Open Source Scan Converter (OSSC)
+
+
+userdel -r lcuser
+ln -s /var/lib/jenkins /home/lcuser
+chown jenkins:jenkins /home/lcuser
+
+Plugin Name	
+Jenkins Xvfb plugin	
+Jenkins TextFinder plugin	
+IBM UrbanCode Deploy Plugin	
+Build Failure Analyzer	
+Javadoc Plugin	
+Team Concert Git Plugin	
+Jenkins Cobertura Plugin	
+xUnit plugin		
+Ant Plugin	
+Jenkins SSH plugin	
+Jenkins Emma plugin	
+Jenkins Subversion Plug-in	
+Jenkins Artifactory Plugin	
+Jenkins Multijob plugin	
+OWASP Dependency-Check Plugin	
+Jenkins Zentimestamp plugin	
+SSH Agent Plugin	
+Docker plugin	
+Team Concert Plugin	
+PMD Plug-in	
+Kubernetes plugin	
+ChuckNorris Plugin	
+GitHub plugin	
+build-name-setter
+Folders Plugin	
+Credentials Binding Plugin
+Discard Old Build plugin	
+CloudBees Docker Build and Publish plugin	
+NodeJS Plugin	
+conditional-buildstep	
+Jenkins disk-usage plugin	
+nvm wrapper
+Groovy Postbuild	
+Email Extension Plugin	
+HTTP Request Plugin	
+Fail The Build Plugin	
+JUnit Plugin	
+HTML Publisher plugin	
+Box UK - JSLint	
+Jenkins Git plugin	
+Slack Notification Plugin
+Jenkins Parameterized Trigger plugin	
+FindBugs Plug-in	
+Checkstyle Plug-in	
+Repository Connector	
+Jenkins build timeout plugin	
+Mask Passwords Plugin	
+Jenkins promoted builds plugin	
+Groovy	
+Gradle Plugin	
+Jenkins Violations plugin	
+TestNG Results Plugin	
+GitHub Pull Request Builder	
+Jenkins Workspace Cleanup Plugin
+Rebuilder	
+docker-build-step	
+Jenkins Post-Build Script Plug-in	
+Xcode integration	
+Python Plugin	
+Environment Injector Plugin	
+Warnings Plug-in	
+Jenkins sbt plugin	
+Jenkins CVS Plug-in	
+Copy Artifact Plugin	
+Least Load plugin	
+Matrix Authorization Strategy Plugin	
+Environment Script Plugin	
+CloudBees Docker Custom Build Environment Plugin	
+Jenkins JaCoCo plugin	
+Build Blocker Plugin	
+Timestamper	
+Jenkins Clone Workspace SCM Plug-in	
+Parameterized Remote Trigger Plugin	
+Jenkins user build vars plugin	
+Performance plugin	
+Static Analysis Collector Plug-in	
+Jenkins Mailer Plugin	
+Jenkins JDepend Plugin	
+Maven Integration plugin
+Build flow test aggregator	
+Join plugin	
+Gatling Jenkins Plugin	
+Build Pipeline Plugin	
+Scriptler	
+Delivery Pipeline Plugin
